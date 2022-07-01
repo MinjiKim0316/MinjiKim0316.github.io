@@ -1,0 +1,250 @@
+@media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  .k-navbar-toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 37px;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+  }
+  #k-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(255, 147, 165);
+  }
+  #k-navbar.navbar--dark {
+    padding: 16px;
+  }
+  .k-nav-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 35px;
+    padding: 5px 65px;
+    display: none;
+  }
+  .k-nav-menu.open {
+    display: block;
+  }
+  .k-section {
+    padding: 16px;
+    padding-top: 50px;
+  }
+  .k-about-inner {
+    height: auto;
+  }
+  .k-about-box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .k-about-edu {
+    width: 100%;
+    border: none;
+    margin-left: 0;
+  }
+  .k-about-edu-title {
+    width: 100%;
+    margin-left: 0;
+  }
+  .k-edu-items {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .k-about-edu-colleges {
+    height: auto;
+    /* margin-top: 20px; */
+    margin: auto;
+    width: 100%;
+  }
+  .k-college-year,
+  .k-college2-year,
+  .k-college-name,
+  .k-college2-name,
+  .k-college-degree,
+  .k-college2-degree,
+  .k-college-gpa,
+  .k-college2-gpa {
+    font-size: 17px;
+    padding: 17px 7px;
+  }
+  .k-college2-year {
+    margin-top: 15px;
+  }
+  .k-college2-name {
+    margin-left: -5px;
+  }
+  .k-about-edu-awards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .k-about-edu-awards h3 {
+    top: 0%;
+    left: 5%;
+    /* transform: translateX(40%); */
+    transform: translateY(-100%);
+    margin-left: 50px;
+  }
+  .k-awards-items {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+  .k-awards-year-name,
+  .k-awards-year {
+    width: 100%;
+    padding: 8.5px 20px;
+    margin: 0;
+    margin-left: 0;
+    font-size: 17px;
+  }
+  .k-awards-year-name {
+    margin-top: 50px;
+  }
+  .k-awards-list-item {
+    font-size: 14px;
+    /* float: right; */
+    width: 100%;
+  }
+  .k-awards-list-name,
+  .k-awards-list {
+    width: 100%;
+    padding: 9px 10px;
+    margin: 0 10px;
+    margin-left: 0px;
+    font-size: 17px;
+  }
+  .k-about-exp-title {
+    width: 100%;
+    margin-left: 70px;
+    background-color: rgb(204, 201, 201);
+  }
+  .k-about-exp {
+    margin-left: 0px;
+    width: 100%;
+    padding: 0 50px;
+    border: none;
+  }
+  .k-about-exp-title {
+    width: 100%;
+    margin-top: 20px;
+    transform: translateX(-27%);
+  }
+  .k-about-ela-items {
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+    border: none;
+  }
+  .k-ela-company,
+  .k-sea-company {
+    width: 100%;
+  }
+  .k-ela-name,
+  .k-ela-name-p,
+  .k-sea-name {
+    width: 100%;
+    margin: auto;
+    margin-left: 0px;
+    font-size: 17px;
+  }
+  .k-ela-name-p {
+    padding: 2px 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .k-sea-name-p {
+    margin-top: -40px;
+    width: 100%;
+    margin-left: 0px;
+    font-size: 17px;
+  }
+  #k-skills {
+    height: auto;
+    margin-top: 70px;
+  }
+  .k-skills-text {
+    width: 100%;
+    padding: 5px 15px;
+    margin-top: -5px;
+    margin-bottom: 9px;
+  }
+  .skillset {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .skill-item1,
+  .skill-item2,
+  .skill-item3 {
+    width: 90%;
+  }
+  .skillset-tools {
+    height: auto;
+  }
+  .tools-item1,
+  .tools-item2,
+  .etc-item {
+    width: 90%;
+  }
+  #k-work {
+    height: auto;
+  }
+  .k-work-categories {
+    margin-top: 30px;
+  }
+  .k-work-projects {
+    width: 100%;
+    margin-top: -10px;
+  }
+  .k-project {
+    flex-grow: 1;
+  }
+  .k-category-btn {
+    margin: 5px 0;
+    width: 100%;
+  }
+  .k-contact-title {
+    font-size: 35px;
+  }
+  #k-envelope,
+  #k-link,
+  #k-git {
+    font-size: 23px;
+  }
+  #k-envelope,
+  #k-link,
+  #k-git {
+    font-size: 30px;
+    margin: 15px 0;
+    margin-bottom: -9px;
+    padding-top: 15px;
+  }
+  .k-email,
+  .k-linkedln,
+  .k-github {
+    font-size: 20px;
+  }
+  .k-contact-rights {
+    font-size: 18px;
+  }
+  .k-arrow-up {
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+    width: 39px;
+    height: 39px;
+    line-height: 19px;
+    font-size: 27px;
+  }
+}

@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minji Kim's portfolio</title>
+  <meta name="description" content="Portfolio for very-passionate front-end developer Minji">
+  <meta name="author" content="MinjiKim">
+  <!-- FontAwesome CDN -->
+  <script src="https://kit.fontawesome.com/06b8ff2a50.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/Image/Images/minjiKim/favicon.img.ico">  
+  <!-- Featherlight JS -->
+  <script src="/JS/featherlight/featherlight.js"></script>
+  <link rel="stylesheet" href="/JS/featherlight/featherlight.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/minjikim-portfolio.style.css">
+  <link rel="stylesheet" href="/minjikim-portfolio.responsive.css">
+  <script src="/minjikim-portfolio.js" defer></script>
 </head>
 <body>
-    
+  
+  <!-- Navbar -->
+  <nav id="k-navbar">
+    <div class="k-navbar-logo">
+      <img src="/Image/Images/minjiKim/favicon.img.ico">
+      <a href="#" class="k-navbar-name">Minji Kim</a>
+    </div>
+    <div class="k-navbar-menu">
+      <ul class="k-nav-menu">
+        <li class="k-nav-menu-item active" data-link="#k-home">Home</li>
+        <li class="k-nav-menu-item" data-link="#k-about">About</li>
+        <li class="k-nav-menu-item" data-link="#k-skills">Skills</li>
+        <li class="k-nav-menu-item" data-link="#k-work">My Work</li>
+        <li class="k-nav-menu-item" data-link="#k-contact">Contact</li>
+      </ul>
+    </div>
+
+    <!-- Toggle button -->
+    <button class="k-navbar-toggle-btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <!-- Home -->
+  <section id="k-home">
+    <div class="k-home-container">
+      <img src="/Image/Images/minjiKim/MinjiKim-img.jpg" alt="Minji's profile photo" class="k-home-avatar">
+      <h1 class="k-home-title">Hello, <br> I'm Minji Kim</h1>
+      <h2 class="k-home-description">A very-passionate and positive front-end developer and UI designer currently residing in Republic of Korea.</h2>
+      <button class="k-home-contact">Contact Me</button>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="k-about" class="k-section">
+    <div class="k-section-container">
+      <div class="k-about-inner">
+        <h1>About Me</h1>
+        <div class="k-about-box">
+          <div class="k-about-edu">
+            <div class="k-about-edu-title">
+              <h2>Education</h2>
+            </div>
+            <div class="k-about-edu-content">
+              <div class="k-about-edu-colleges">
+                <h3>Colleges</h3>
+                <div class="k-edu-items">
+                  <div class="k-Citytech">
+                    <div class="k-college-year">2017 ~ 2019</div>
+                    <div class="k-college-name">New York City College of Technology, City University of New York</div>
+                    <div class="k-college-degree">Baccalaureate Degree of Business and Technolopy of Fashion</div>
+                    <div class="k-college-gpa">3.5</div>
+                  </div>
+                  <div class="k-bmcc">
+                    <div class="k-college2-year">2015 ~ 2017</div>
+                    <div class="k-college2-name">Borough of Manhattan Community College, City University of New York</div>
+                    <div class="k-college2-degree">Associate of Art</div>
+                    <div class="k-college2-gpa">3.4</div>
+                  </div>
+                </div> 
+              </div>
+              <div class="k-about-edu-awards">
+                <h3>Honor & Awards</h3>
+                <div class="k-awards-items">
+                  <div class="k-awards-year-item">
+                    <div class="k-awards-year-name">Year</div>
+                    <div class="k-awards-year">2016</div>
+                    <div class="k-awards-year">2017</div>
+                    <div class="k-awards-year">2018</div>
+                    <div class="k-awards-year">2019</div>
+                  </div>
+                </div>
+                <div class="k-awards-list-item">
+                  <div class="k-awards-list-name">List</div>
+                  <div class="k-awards-list">Dean’s List at Borough of Manhattan Community College</div>
+                  <div class="k-awards-list">Dean’s Award at Borough of Manhattan Community College</div>
+                  <div class="k-awards-list">Honors Student, Dean’s List at New York City College of Technology</div>
+                  <div class="k-awards-list">Honors Student, Dean’s List at New York City College of Technology</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="k-about-exp">
+            <div class="k-about-exp-title">
+              <h2>Experience</h2>
+            </div>
+            <div class="k-about-exp-content">
+              <div class="k-about-ela-items">
+                <div class="k-ela-company">
+                  <div class="k-ela-name">September 2019 - December 2019</div>
+                  <div class="k-ela-name">ELA USA in Brooklyn, New York, the United States</div>
+                  <div class="k-ela-name">Marketing Assistant</div>
+                  <div class="k-ela-name">
+                    <p class="k-ela-name-p">
+                      ㅁ Designed line sheet for 2019 Collection to look clear and professional. <br>
+                      ㅁ Enhanced ELA USA’s business and production : focused on designing sample sale flyer based on the opinions of a director and colleagues and working on sample sale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="k-about-sea-items">
+                <div class="k-sea-company">
+                  <div class="k-sea-name">February 2019 - May 2019</div>
+                  <div class="k-sea-name">Sea NY in Manhattan, New York, the United States</div>
+                  <div class="k-sea-name">Production Assistant</div>
+                  <div class="k-sea-name4">
+                    <p class="k-sea-name-p">
+                      ㅁ Supported a process of samplings to be ready on time : focused on organizing and fabric samples and accessories based on the director's opinions. <br>
+                      ㅁ Designed, organized, and improved line sheet for Spring/Summer and Fall/Winter 2019 to look professional with colleagues based on the opinions of a team. <br>
+                      ㅁ Assisted photoshoot for lookbook for Fall/Winter 2019 to attract more clients with colleagues.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- Skills -->
+  <section id="k-skills" class="k-section">
+    <div class="k-section-contaier">
+      <h1 class="k-skills-title">Skills</h1>
+      <h2 class="k-skills-subtitle">Skills & Attribute</h2>
+      <p class="k-skills-text">
+        Learn and experience with intermediate phase of the software life-cycle. But, particularly good at designing website and UI. Also, passion for learning new languages and technologies. Capable of working within a team environment and independently. Ability to plan and time schedule and adapt to a new condition quickly when needed.
+      </p>
+      <div class="skillset">
+        <div class="skillset-left">
+          <h3 class="skillset-title">Skills</h3>
+          <div class="skills">
+            <div class="skill-item1">
+              <div class="skill-html-title">
+                <h2><i class="fa-brands fa-html5"></i> HTML</h2>
+              </div>
+              <div class="skill-html-description">
+                <p>
+                  Make website and UI following web standard and web accessibility. Make a whole layout using simentic-tag and markup recommended by HTML5 for web standard. Also, do work HTML forms with class name carefully after working on web UI design. In particular, do make a form planning the whole layout design and contents such as fonts, colors, sizes, interaction, and HTML wireframe before start a work. 
+                </p>
+              </div>
+            </div>
+            <div class="skill-item2">
+              <div class="skill-css-title">
+                <h2><i class="fa-brands fa-css3-alt"></i> CSS</h2>
+              </div>
+              <div class="skill-css-description">
+                <p>
+                  Array and design HTML elements considering Cross-Browsing. In certain cases, do use new and diverse patterns and design of CSS provided by CSS3.
+                </p>
+              </div>
+            </div>
+            <div class="skill-item3">
+              <div class="skill-javascript-title">
+                <h2><i class="fa-brands fa-js-square"></i> Javascript & JQuery</h2>
+              </div>
+              <div class="skill-javascript-description">
+                <p>
+                  Work basic and mandatory Javascript. Capable of making forms such as navigation, tabs, accordion. Also, possible to use Javascript and JQuery together. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset-right">
+          <div class="skillset-tools">
+            <h3 class="skillset-tools-title">Tools</h3>
+            <ul class="tools-list">
+              <li class="tools-item1"><span>Visual Studio</span></li>
+              <li class="tools-item2"><span>Adobe Photoshop</span> <br>
+              <p class="tools-adobe">
+                Basic skills and capable of using basic and mandatory tools.
+              </p></li>
+            </ul>
+          </div>
+          <div class="skillset-etc">
+            <h3 class="skillset-etc-title">Etc</h3>
+            <ul class="etc-list">
+              <li class="etc-item"><span><i class="fa-brands fa-git-square"></i> Git</span>
+              <br>
+              <p class="etc-git">
+                Capable of using basic but mandatory skills.
+              </p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Work -->
+  <section id="k-work" class="k-section">
+    <div class="k-section-contaier">
+      <h1 class="k-work-title">My Work</h1>
+      <h3 class="k-work-subtitle">Projects</h3>
+      <div class="k-work-categories">
+        <button class="k-category-btn selected" data-filter="*">ALL<span class="k-category-count">22</span></button>
+        <button class="k-category-btn" data-filter="css">CSS<span class="k-category-count">8</span></button>
+        <button class="k-category-btn" data-filter="javasccript">JAVASCRIPT & Jquery<span class="k-category-count">8</span></button>
+        <button class="k-category-btn" data-filter="web-ui">WEBSITES & MOBILE APPS<span class="k-category-count">6</span> </button>
+      </div>
+      <div class="k-work-projects">
+        <a href="/plug-in/minjikim-css/minjikim-css.html" class="k-project"  data-type="css" data-featherlight="i-frame">
+          <img src="/Image/Images/minjiKim/css-prototype1.jpg" alt="CSS">
+          <div class="k-project-description">
+            <h3></h3>
+            <span>Clone coding with HTML and CSS made by <b>Minji Kim</b></span>
+          </div>
+        </a>
+        <a href="/plug-in/minjikim-javascript/minjikim-javascript.html" class="k-project" data-type="javasccript" data-featherlight="i-frame">
+          <img src="Image/Images/minjiKim/work-javascript8.jpg" alt="javascript">
+          <div class="k-project-description">
+            <h3></h3>
+            <span>Clone coding with Javascript made by <b>Minji Kim</b></span>
+          </div>
+        </a>
+        <a href="/plug-in/minjikim-webAndUI/minjikim-webAndUI.html" class="k-project"  
+        data-type="web-ui" data-featherlight="i-frame">
+          <img src="/Image/Images/minjiKim/work-webAndUI-chanel.jpg" alt="chanel">
+          <div class="k-project-description">
+            <h3></h3>
+            <span>Website and UI made by <b>Minji Kim</b></span>
+          </div>
+        </a>
+        <a href="/plug-in/minjikim-mobile/minjikim-mobile.html" class="k-project" data-type="web-ui" data-featherlight="i-frame">
+          <img src="/Image/Images/minjiKim/work-mobileapp2.jpg" alt="shopping">
+          <div class="k-project-description">
+            <h3></h3>
+            <span>Website and UI made by <b>Minji Kim</b></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="k-contact" class="k-section">
+    <div class="k-contact-items">
+      <h1 class="k-contact-title">Please Contact Me!</h1>
+      <div class="k-contact-email">
+        <i class="fa-solid fa-envelope" id="k-envelope"></i>
+        <a href="minjikim.6420011@gmail.com" class="k-email">minjikim.6420011@gmail.com</a>
+      </div>
+      <div class="k-contact-linkedln">
+        <i class="fa-brands fa-linkedin" id="k-link"></i>
+        <a href="www.linkedin.com/in/minji-kim-57a71b243" class="k-linkedln">www.linkedin.com/in/minji-kim-57a71b243</a>
+      </div>
+      <div class="k-contact-git">
+        <i class="fa-brands fa-git-square" id="k-git"></i>
+        <a href="https://github.com/Nodame0316/Minji-Kim-s-portfolio" class="k-github">https://github.com/Nodame0316/Minji-Kim-s-portfolio</a>
+      </div> 
+      <p class="k-contact-rights">2022 Minji Kim - All rights reserved</p>   
+    </div>
+  </section>
+  <!-- Arrow Up -->
+  <button class="k-arrow-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
 </body>
 </html>
