@@ -91,7 +91,7 @@
     left: 5%;
     /* transform: translateX(40%); */
     transform: translateY(-100%);
-    margin-left: 50px;
+    margin-left: 90px;
   }
   .k-awards-items {
     flex-direction: column;
@@ -124,19 +124,16 @@
   }
   .k-about-exp-title {
     width: 100%;
-    margin-left: 70px;
+    /* margin-left: 0px; */
     background-color: rgb(204, 201, 201);
+    margin-top: 20px;
+    transform: translateX(0%);
   }
   .k-about-exp {
     margin-left: 0px;
     width: 100%;
     padding: 0 50px;
     border: none;
-  }
-  .k-about-exp-title {
-    width: 100%;
-    margin-top: 20px;
-    transform: translateX(-27%);
   }
   .k-about-ela-items {
     width: 100%;
@@ -215,28 +212,27 @@
     width: 100%;
   }
   .k-contact-title {
-    font-size: 35px;
+    font-size: 32px;
   }
   #k-envelope,
   #k-link,
   #k-git {
-    font-size: 23px;
-  }
-  #k-envelope,
-  #k-link,
-  #k-git {
-    font-size: 30px;
+    font-size: 25px;
     margin: 15px 0;
     margin-bottom: -9px;
     padding-top: 15px;
   }
   .k-email,
-  .k-linkedln,
+  .k-linkedln {
+    font-size: 17px;
+    margin: 3px;
+  }
   .k-github {
-    font-size: 20px;
+    font-size: 16px;
+    margin: 2px;
   }
   .k-contact-rights {
-    font-size: 18px;
+    font-size: 15px;
   }
   .k-arrow-up {
     position: fixed;
