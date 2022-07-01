@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="/plug-in/javascriptAndJquery/javascript-3.style.css">
+  <title>javascript-3</title>
+</head>
+<body>
+  
+  <div class="star-rating">
+    <h2>Please Give Us Your Feedback</h2>
+    <div class="stars">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+    </div>
+    <div class="print">Feedback Please ~~</div>
+  </div>
+
+  <script>
+    $('.stars .fa').click(function(){
+      $(this).addClass('active')
+      $(this).prevAll().addClass('active')
+      $(this).nextAll().removeClass('active')
+
+      let num = $(this).index()
+      let starRate = num + 1
+      //$('.print').text(starRate)
+
+      if(starRate == 1) {
+        $('.print').html('<img src="/Image/Images/javascript/star-icon-image01.png">' + 'Poor')
+      }
+      else if(starRate == 2) {
+        $('.print').html('<img src="/Image/Images/javascript/star-icon-image02.png">' +'Below Average')
+      }
+      else if(starRate == 3) {
+        $('.print').html('<img src="/Image/Images/javascript/star-icon-image03.png">' +'Average')
+      }
+      else if(starRate == 4) {
+        $('.print').html('<img src="/Image/Images/javascript/star-icon-image04.png">' +'Above Average')
+      }
+      else {
+        $('.print').html('<img src="/Image/Images/javascript/star-icon-image05.png">' +'Exellent')
+      }
+    })
+  </script>
+
+</body>
+</html>

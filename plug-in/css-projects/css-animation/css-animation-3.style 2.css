@@ -1,0 +1,82 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+.skill-progress {
+  width: 500px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill-progress h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: normal;
+}
+.item {}
+.item p {
+  /* border: 1px solid #fff; */
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.item p span:nth-child(1) {
+  float: left;
+}
+.item p span:nth-child(2) {
+  float: right;
+}
+.progress {
+  border: 1px solid #6cd4c4;
+  padding: 5px;
+  border-radius: 4px;
+}
+.progress-level {
+  height: 10px;
+  /* background-color: linear-gradient(to right, crimson, gold); */
+  background-color: red;
+  animation: ani 1s;
+  animation-fill-mode: both;
+}
+.skill-progress .item:nth-last-of-type(1) .progress-level {
+  animation-delay: 0s;
+  background-color: rgb(156, 9, 70);
+}
+.skill-progress .item:nth-of-type(2) .progress-level {
+  animation-delay: 0.25s;
+  background-color: rgb(231, 96, 46);
+}
+.skill-progress .item:nth-of-type(3) .progress-level {
+  animation-delay: 0.5s;
+  background-color: gold;
+}
+.skill-progress .item:nth-of-type(4) .progress-level {
+  animation-delay: 0.75s;
+  background-color: green;
+}
+.skill-progress .item:nth-of-type(5) .progress-level {
+  animation-delay: 0.10s;
+  background-color: dodgerblue;
+}
+
+@keyframes ani {
+  0% {
+    width: 0;
+  }
+}

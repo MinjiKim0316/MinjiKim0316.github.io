@@ -1,0 +1,54 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Default CSS */
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
+form input[type=checkbox] {
+  display: none;
+}
+form label {
+  display: block;
+  font-size: 29px;
+  margin-bottom: 45px;
+}
+form label:before {
+  content: '\f00c';
+  font-family: fontawesome;
+  border: 1px solid #333;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  color: transparent;
+  transition: 0.2s;
+}
+form input[type=checkbox]:checked + label:before {
+  background-color: orangered;
+  color: #fff;
+  border-color: transparent;
+} 
+form input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}

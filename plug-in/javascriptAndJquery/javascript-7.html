@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="/plug-in/javascriptAndJquery/javascript-7.style.css">
+  <title>javascript-7</title>
+</head>
+<body>
+  
+  <section>
+    <article>
+      <div class="heading">
+        <span>Galaxy Z Flip 3</span>
+        <h1>A New Generation Everyone Seeks Is Here!</h1>
+      </div>
+      <div class="content">
+        <div class="accordion">
+          <div class="title active" data-image="/Image/Images/javascript/new-phone-image-01.jpg">A Good Thing Just Got Better</div>
+          <div class="desc active">
+            Folds into your pocket. Tucks into your purse. Slips into your skinniest jeans. Then you can take it out and it flips open into a full-screened 5G smartphone and flexes to your favorite angles.</div>
+          <div class="title" data-image="/Image/Images/javascript/new-phone-image-02.jpg">Amazing Things Happen, Even On The Small Screen</div>
+          <div class="desc">
+            Check messages, take photos, play music and so much more, all without opening your phone. The 1.9-inch Cover Screen displays notifications and lets you intuitively interact with them.</div>
+          <div class="title" data-image="/Image/Images/javascript/new-phone-image-03.jpg">Knowing Your Angles Just Got Easier</div>
+          <div class="desc">
+            Capturing Single Take moments has changed for the better. Now you can take photos and videos more easily than you ever could before with Flex mode. All you have to do is adjust the angle and step back for hands-free selfies.</div>
+          <div class="title" data-image="/Image/Images/javascript/new-phone-image-04.jpg">Doing Double At The Same Time</div>
+          <div class="desc">
+            Split your screen in two and multitask like a pro. You can catch up on your YouTube playlist and text your friend — then send off a stunning selfie and watch the reactions roll in. And when you're watching something, let the sound immerse you with Dolby Atmos and stereo speakers.</div>
+        </div>
+        <div class="image">
+          <img src="/Image/Images/javascript/new-phone-image-01.jpg">
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <script>
+    $('.title').click(function(){
+      $(this).addClass('active')
+      $(this).siblings('.title').removeClass('active')
+      $(this).siblings('.desc').stop().slideUp()
+      $(this).next().stop().slideDown()
+
+      let dataImage = $(this).attr('data-image')
+      $('.image img').attr('src',dataImage)
+    })
+  </script>
+
+</body>
+</html>

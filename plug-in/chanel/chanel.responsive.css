@@ -1,0 +1,582 @@
+@media(max-width: 768px){
+  /* * {
+    overflow-x: hidden;
+  } */
+  .chanel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  /*####### Section : chanel_header #######*/
+  .cn-header {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding-top: 7px;
+    /* border: 1px solid #000; */
+  }
+  .chanel_logo {
+    margin-top: 10px;
+    transform: translateX(120%);
+    width: 28%;
+    /* border: 1px solid green; */
+  }
+  .cn-icon {
+    /* border: 1px solid red; */
+    margin-top: -3px;
+    padding-bottom: 0;
+    padding-top: 7px;
+    margin-bottom: -10px;  
+    margin-right: -15px; 
+  }
+  .cn-icon a {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .cn-icon .search {}
+  .cn-icon .user {}
+  .cn-icon .bag {
+    margin-right: 65px;
+  }
+
+  /* ### Section : Nav ### */
+  nav {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    left: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
+  nav.open {
+    visibility: visible;
+  }
+  .cn-nav-btn {
+    display: block;
+    float: none;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 30px;
+    width: 270px;
+    height: 100vh;
+    top: 31px;
+    left: -270px;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    padding-top: 70px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .cn-nav-btn a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Monde', sans-serif;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 15px;
+    /* border: 1px solid red; */
+  }
+  .cn-nav-btn a:hover {
+    color: #000;
+    font-weight: bold;
+  }
+  .cn-nav-btn a.active {
+    color: #000;
+  }
+  #horizontal-underline {
+    position: absolute;
+    width: 0;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    height: 4px;
+    margin-top: 12px;
+  }
+  
+  /* ##### Section : Toggle ##### */
+  .cn-toggle {
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-top: 10px;
+    top: 5px;
+    left: 20px;
+    font-size: 20px;
+    /* text-align: center; */
+    cursor: pointer;
+    display: block;
+  }
+  .cn-toggle:focus {
+    outline: none;
+  }
+  .cn-toggle span {
+    height: 3px;
+    width: 20px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+  .cn-toggle.active span {
+    background-color: transparent;
+  }
+  .cn-toggle span::before,
+  .cn-toggle span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #000;
+    color: #000;
+  }
+  .cn-toggle span::before {
+    transform: translateY(-6px);
+  }
+  .cn-toggle.active span::before {
+    transform: rotate(45deg);
+  }
+  .cn-toggle span::after {
+    transform: translateY(6px);
+  }
+  .cn-toggle.active span::after {
+    transform: rotate(135deg);
+  }
+
+  /* ####### Section : Modal ####### */
+  .modal { 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    top: 9.8%;
+    height: 100%;
+    width: 80%;
+    overflow: auto;
+    background-color: #fff;
+  }
+  .modal-content {
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 2% 7%;
+    padding: 0;
+    margin-top: -60px;
+    width: 80%;
+  }
+  .cn-nav-btn a {
+    background-color: #fff;
+    color: #000;
+  }
+  .cn-nav-btn a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  #nav-close-modal {
+    color: #222;
+    float: right;
+    font-weight: normal;
+    font-size: 40px;
+    margin-left: 290px;
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
+  }
+  .closeBtn:hover,.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* ## Section : Fashion, Fine-jewelry,EYEWEAR, FRAGRANCE, MAKEUP, ABOUT ## */
+  .fashion-photo img,
+  .fine-jewelry-photo img,
+  .eyewear-photo img,
+  .fragrance-photo img,
+  .makeup-photo img {
+    float: none;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  .fashion-items,
+  .fine-jewelry-items,
+  .eyewear-items,
+  .fragrance-items,
+  .makeup-items,
+  .about-items {}
+  .fashion-item {}
+  .fashion-item .fashion-list .fashion-shows ul,
+  .fine-jewelry-item .fine-jewelry-list .fine-jewelry-featured ul,
+  .eyewear-item .eyewear-list .eyewear-sunglasses ul,
+  .fragrance-item .fragrance-list .fragrance-view ul,
+  .makeup-item .makeup-list .makeup-the-latest ul,
+  .about-item .about-list .about-inside ul {
+    /* border: 1px solid green; */
+    display: block;
+    width: 200px;
+    list-style: none;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1d1d1d;
+    margin-left: 80px;
+  }
+  .fashion-item .fashion-list .fashion-shows ul li,
+  .fine-jewelry-item .fine-jewelry-list .fine-jewelry-featured ul li,
+  .eyewear-item .eyewear-list .eyewear-sunglasses ul li,
+  .fragrance-item .fragrance-list .fragrance-view ul li,
+  .makeup-item .makeup-list .makeup-the-latest ul li,
+  .about-item .about-list .about-inside ul li {
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: #424242;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .fashion-item .fashion-list .fashion-shows ul li a,
+  .fine-jewelry-item .fine-jewelry-list .fine-jewelry-featured ul li a 
+  .eyewear-item .eyewear-list .eyewear-sunglasses ul li a,
+  .fragrance-item .fragrance-list .fragrance-view ul li a,
+  .makeup-item .makeup-list .makeup-the-latest ul li a,
+  .about-item .about-list .about-inside ul li a {
+    color: #424242;
+  }
+  .fashion-boutiques ul,
+  .cn-news ul,
+  .cn-library ul,
+  .cn-fs-services ul,
+  .cn-featured ul,
+  .cn-collections ul,
+  .cn-categories ul,
+  .cn-bridal ul,
+  .cn-care ul,
+  .cn-eyeglasses ul,
+  .cn-stories ul,
+  .cn-services ul,
+  .fragrance-collections ul,
+  .fragrance-featured ul,
+  .cn-women ul,
+  .cn-men ul,
+  .cn-bath-and-body ul,
+  .makeup-collections ul,
+  .makeup-face ul,
+  .cn-eyes ul,
+  .cn-lips ul,
+  .cn-nails ul,
+  .cn-brushes-and-tools ul,
+  .about-corporate ul,
+  .about-foundation ul,
+  .cn-careers ul,
+  .cn-fund ul,
+  .cn-prize ul,
+  .cn-eye-services ul,
+  .fragrance-collections ul,
+  .fragrance-featured ul,
+  .cn-women ul,
+  .cn-men ul,
+  .cn-bath-and-body ul,
+  .makeup-collections ul,
+  .makeup-face ul,
+  .cn-eyes ul,
+  .cn-lips ul, 
+  .cn-nails ul, 
+  .cn-brushes-and-tools ul,
+  .about-corporate ul,
+  .about-foundation ul,
+  .cn-careers ul,
+  .cn-fund ul,
+  .cn-prize ul {
+    list-style: none;
+    display: block;
+    width: 200px;
+    list-style: none;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1d1d1d;
+  }
+  .fashion-boutiques ul li,
+  .cn-news ul li,
+  .cn-library ul li,
+  .cn-fs-services ul li,
+  .cn-featured ul li,
+  .cn-collections ul li,
+  .cn-categories ul li,
+  .cn-bridal ul li,
+  .cn-care ul li,
+  .cn-eyeglasses ul li,
+  .cn-stories ul li,
+  .cn-eye-services ul li,
+  .fragrance-collections ul li,
+  .fragrance-featured ul li,
+  .cn-women ul li,
+  .cn-men ul li,
+  .cn-bath-and-body ul li,
+  .makeup-collections ul li,
+  .makeup-face ul li,
+  .cn-eyes ul li,
+  .cn-lips ul li, 
+  .cn-nails ul li, 
+  .cn-brushes-and-tools ul li,
+  .about-corporate ul li,
+  .about-foundation ul li,
+  .cn-careers ul li,
+  .cn-fund ul li,
+  .cn-prize ul li {
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: #424242;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .fashion-boutiques ul li a,
+  .cn-news ul li a,
+  .cn-library ul li a,
+  .cn-fs-services ul li a,
+  .cn-featured ul li a,
+  .cn-collections ul li a,
+  .cn-categories ul li a,
+  .cn-bridal ul li a,
+  .cn-care ul li a,
+  .fine-jewelry-featured ul li a,
+  .eyewear-sunglasses ul li a,
+  .cn-eyeglasses ul li a,
+  .cn-stories ul li a,
+  .cn-eye-services ul li a,
+  .fragrance-collections ul li a,
+  .fragrance-featured ul li a,
+  .cn-women ul li a,
+  .cn-men ul li a,
+  .cn-bath-and-body ul li a,
+  .fragrance-view ul li a,
+  .makeup-collections ul li a,
+  .makeup-face ul li a,
+  .cn-eyes ul li a,
+  .cn-lips ul li a, 
+  .cn-nails ul li a, 
+  .cn-brushes-and-tools ul li a,
+  .makeup-the-latest ul li a,
+  .about-corporate ul li a,
+  .about-foundation ul li a,
+  .cn-careers ul li a,
+  .cn-fund ul li a,
+  .cn-prize ul li a,
+  .about-inside ul li a {
+    color: #525252;
+    font-weight: 300;
+  }
+  .fashion-item .fashion-list .fashion-shows ul li div {
+    /* border: 1px solid blue; */
+    font-size: 12px;
+    color: #bbbbbb;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+    margin-top: 5px;
+  }
+  .fashion-boutiques {
+    /* border: 1px solid green; */
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .cn-news {
+    /* border: 1px solid green; */
+    margin-top: 40px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-library {
+    /* border: 1px solid green; */
+    margin-top: 40px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-fs-services {
+    /* border: 1px solid rgb(5, 12, 5); */
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-bottom: 80px;
+    float: right;
+  }
+  .cn-collections {
+    /* border: 1px solid green; */
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+  .cn-categories {
+    /* border: 1px solid green; */
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-bridal {
+    /* border: 1px solid green; */
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-care {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+    float: right;
+  }
+  .cn-eyeglasses {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .cn-stories {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-eye-services {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+    float: right;
+  }
+  .fragrance-collections {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .fragrance-featured {
+    margin-top: 40px;
+    margin-left: 80px; 
+  }
+  .cn-women {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .cn-men {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-bath-and-body {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+    float: right;
+  }
+  .cn-makeup-collections {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .makeup-face {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .cn-eyes {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-lips {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-nails {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-brushes-and-tools {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+    float: right;
+  }
+  .about-inside {
+    margin-left: 0;
+  }
+  .about-corporate {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  .about-foundation {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-careers {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-fund {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .cn-prize {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+    float: right;
+  }
+
+  /* ####### Section : Footer ####### */
+  .chanel-footer {
+    width: 100%;
+    height: 950px;
+    background-color: #000;
+    font-family: 'Monde', sans-serif;
+  }
+  .cn-footer-inner {}
+  .cn-footer-heading {
+    /* border: 1px solid #fff; */
+    padding: 25px;
+  }
+  .cn-footer-heading h1 {
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .cn-footer-items {
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+  }
+  .cn-footer-item {
+    /* border: 1px solid #fff; */
+    float: none;
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-left: 5px; 
+  }
+  .cn-footer-item ul {
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .cn-footer-item ul h1 {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .cn-footer-item ul li {
+    /* border: 1px solid #fff; */
+    margin-top: 0;
+  }
+  .cn-footer-item ul li a {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    font-size: 12px;
+  }
+  .cn-footer-item ul li a:hover {
+    color: #fff;
+  }
+}

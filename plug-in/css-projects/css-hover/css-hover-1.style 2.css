@@ -1,0 +1,53 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.app-ui {
+  /* border: 1px solid red; */
+  width: 270px;
+  height: 450px;
+  transform: rotate(-30deg) skewX(20deg);
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  background-color: #eee;
+}
+.app-ui:hover {
+  box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.5);
+}
+.app-ui img {
+  position: absolute;
+  transition: 0.5s;
+  width: 100%;
+}
+.app-ui:hover img:nth-child(1) {
+  transform: translate(20px, -20px);
+  opacity: 0.2;
+}
+.app-ui:hover img:nth-child(2) {
+  transform: translate(45px, -45px);
+  opacity: 0.4;
+}
+.app-ui:hover img:nth-child(3) {
+  transform: translate(70px, -70px);
+  opacity: 0.6;
+}
+.app-ui:hover img:nth-child(4) {
+  transform: translate(95px, -95px);
+}

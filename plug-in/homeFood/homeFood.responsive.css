@@ -1,0 +1,266 @@
+@media (max-width: 768px) {
+  /* Google Web Font */
+  @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Overpass&display=swap');
+  /* FontAwesome CDN 4.7 */
+  @import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+
+  body {
+    font-size: 15px;
+  }
+  /*####### Section: header #######*/
+  header {
+    padding: 45px 0;
+    position: static;
+  }
+  .hf-heading img {
+    float: left;
+    margin-left: 20px;
+    width: 8%;
+  }
+  input {
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 8px;
+    border-radius: 7px 0 0 7px;
+    cursor: pointer;
+  }
+  .hf-heading button {
+    border: 1px solid rgb(10, 94, 10);
+    width: 60px;
+    height: 25px;
+    border-radius: 0 7px 7px 0;
+    margin-left: -10px;
+    background-color: rgb(10, 94, 10);
+    color: #fff;
+    cursor: pointer;
+  }
+  .hf-heading .hf-cart {
+    float: right; 
+    margin-right: 1020px;
+    margin-top: 9px;
+  }
+  .hf-heading .hf-cart:after {
+    content: '\f07a';
+    font-family: fontawesome;
+    color: orangered;
+    position: absolute;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    font-size: 27px;
+  }
+  .hf-heading .hf-user {
+    float: right;
+    margin-right: 1055px;
+    margin-top: -25px;
+  }
+  .hf-heading .hf-user:after {
+    content: '\f007';
+    font-family: fontawesome;
+    color: orangered;
+    position: absolute;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    font-size: 27px;
+  }
+
+  /*####### Section : Navigation #######*/
+
+  /*####### Section : Main #######*/
+  .hf-main-inner,
+  .hf-main-slider,
+  .hf-main-slides,
+  .hf-main-slide img {
+   width: 100%;
+   height: 100%;
+  }
+  .hf-main-inner {
+   /* border: 1px solid #000; */
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+  }
+  .hf-main-slider {
+   overflow: hidden;
+  }
+  .hf-main-slides {
+   display: flex;
+  }
+  .hf-main-slides input {
+    display: none;
+  }
+  .hf-main-slide {
+    width: 100%;
+    transition: 2s;
+  }
+  /***** Manual Slide Navigation for Main *****/
+  .hf-main-navi-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .hf-main-manual-btn {
+    border: 1px solid #000;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .hf-main-manual-btn:not(:last-child) {
+    margin-right: 20px;
+  }
+  .hf-main-manual-btn:hover {
+    background: #000;
+  }
+  #hf-main-radio1:checked ~ .hf-main-slide-first {
+    margin-left: 0;
+  }
+  #hf-main-radio2:checked ~ .hf-main-slide-first {
+    margin-left: -85%;
+  }
+  #hf-main-radio3:checked ~ .hf-main-slide-first {
+    margin-left: -170%;
+  }
+  #hf-main-radio4:checked ~ .hf-main-slide-first {
+    margin-left: -300%;
+  }
+  /***** Automatic Navigation for Main *****/
+  .hf-main-navi-auto {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 70px;
+    display: none;
+  }
+  .hf-main-navi-auto div {
+    border: 1px solid #000;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .hf-main-navi-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+  #hf-main-radio1:checked ~ .hf-main-navi-auto .hf-main-auto-btn1,
+  #hf-main-radio1:checked ~ .hf-main-navi-auto .hf-main-auto-btn2,
+  #hf-main-radio1:checked ~ .hf-main-navi-auto .hf-main-auto-btn3,
+  #hf-main-radio1:checked ~ .hf-main-navi-auto .hf-main-auto-btn4 {
+    background: #000;
+  }
+  /* ####### Section : Coming Soon, Issue, Trend ####### */
+  .hf-coming-soon-inner {
+    /* border: 1px solid #000; */
+    width: 27%;
+    height: auto;
+    margin: 0px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 5px;
+  }
+  .hf-coming-soon-inner h4,
+  .hf-issue-inner h5,
+  .hf-trend-inner h6,
+  .hf-service-inner h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 29px;
+    margin-left: 18px;
+    padding-top: 17px;
+    color:rgb(13, 83, 13);
+  }
+  /***** Section : Main *****/
+  .hf-new-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .hf-new-item {
+    border-radius: 5px;
+    /* overflow: hidden; */
+    position: static;
+    margin: 0;
+    padding-top: 40px;
+    float: left;
+    box-sizing: border-box;
+    grid: 1;
+    margin-left: 20px;
+    margin-bottom: 45px;
+  }
+  .hf-new-item img {
+    width: 100%;
+  }
+  .hf-new-item .detail {
+    border: 1px solid #eee;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    width: 37%;
+    bottom: -245px;
+    left: 25px;
+    height: 110px;
+    display: grid;
+    /* transition: 0.5s; */
+    box-sizing: border-box;
+  }
+  .hf-new-item:hover .detail {
+    display: none;
+  }
+  .hf-new-item .detail div {
+    background-color: rgb(245, 245, 245);
+  }
+  .hf-new-item .detail .hf-new-detail-title h2,
+  .hf-new-item .detail .hf-new-detail-title h5 {
+    background-color: rgb(245, 245, 245);
+    margin: 7px 5px;
+  }
+  .hf-new-item .detail .hf-new-detail-title h2 {
+    font-size: 14px;
+    line-height: 1.1em;
+  }
+  .hf-new-item .detail .hf-new-detail-title span {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 18px;
+    padding-top: 5px;
+    color:rgb(250, 69, 3);
+    background-color: rgb(245, 245, 245);
+  }
+  .hf-new-item .detail .hf-new-detail-title button {
+    border: 1px solid rgb(233, 235, 233);
+    width: 90%;
+    height: 25px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 2.5px;
+    cursor: pointer;
+  }
+  .hf-new-item .detail .hf-new-detail-title button:hover {
+    background-color: rgb(41, 128, 41);
+    color: #fff;
+  }
+  .hf-new-detail-like {
+    cursor: pointer;
+  }
+  .hf-new-detail-like:before {
+    content: '\f08a';
+    font-family: fontawesome;
+    font-size: 15px;
+    color: #222;
+    position: absolute;
+    top: 900%;
+    right: 10%;
+  }
+  .hf-new-detail-like.active:before {
+    content: '\f004';
+    color: rgb(250, 69, 3);
+  }
+}

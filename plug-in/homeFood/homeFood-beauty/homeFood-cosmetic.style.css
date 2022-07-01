@@ -1,0 +1,363 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Overpass&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+/* FontAwesome CDN 4.7 */
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Common CSS  */
+* {
+  font-family: 'Raleway', sans-serif;
+  list-style: none;
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+body {
+  line-height: 1.2em;
+}
+/* ####### Section : Cosmetic ####### */
+
+.hf-cosmetic-container {
+  width: 1420px;
+}
+.hf-cosmetic-container h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  height: 29px;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  font-size: 34.5px;
+  color: orangered;
+}
+.hf-cosmetic-bar {
+  position: absolute;
+  border: 2px solid rgb(215, 230, 217);
+  width: 290px;
+  top: 12%;
+  left: 41%;
+}
+.hf-cosmetic-best-inner {
+  /* border: 1px solid #000; */
+  width: 1150px;
+  height: 400px;
+  margin: auto;
+  margin-top: 110px;
+}
+.hf-cosmetic-best-inner h2 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(3, 119, 3);
+  font-size: 32px;
+  padding: 20px;
+  padding-left: 0;
+}
+.hf-cosmetic-items {
+  display: flex;
+  gap: 25px;
+  counter-reset: item;
+}
+.hf-cos-item {
+  /* border: 1px solid #000; */
+  height: 290px;
+  padding-top: 20px;
+  flex: 1;
+  position: relative;
+  counter-increment: item;
+}
+.hf-cos-item:hover:before {
+  background-color: rgb(140, 185, 140);
+}
+.hf-cos-item:before {
+ content: counter(item);
+ position: absolute;
+ width: 35px;
+ height: 35px;
+ background-color: #ccc;
+ z-index: 10;
+ border-radius: 0 0 5px 0;
+ color: #fff;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ line-height: 35px;
+}
+.hf-cos-item-photo {
+  position: relative;
+  height: 225px;
+}
+.hf-cos-item-photo a {}
+.hf-cos-item-photo a img {
+  width: 100%;
+  position: absolute;
+  /* z-index: 0; */
+  transition: 0.5s;
+}
+.hf-cos-item-photo a img:first-child {
+  z-index: 1;
+}
+.hf-cos-item-photo a img:last-child {}
+.hf-cos-item-photo:hover a img:first-child {
+  opacity: 0;
+}
+.hf-cos-item-photo:hover a img:last-child {}
+.hf-cos-item-detail {
+  position: relative;
+}
+.hf-cos-item-detail span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.hf-cos-item-detail .price {
+  color:rgb(3, 119, 3);
+  font-size: 19px;
+}
+.hf-cos-item-detail .price b {
+  color: tomato;
+  font-size: 20px;
+}
+.hf-cos-item-detail .price b small {
+  color: tomato;
+  margin-right: 10px;
+}
+.hf-cos-item-detail .name {
+  padding-top: 4px;
+  font-size: 17px;
+}
+.hf-cos-item-detail .count {
+  font-size: 16px;
+  color: rgb(51, 50, 50);
+  margin-left: -20px;
+}
+.hf-cos-item-detail .like {
+  position: absolute;
+  /* border: 1px solid tomato; */
+  width: 20px;
+  height: 20px;
+  right: 45px;
+  bottom: -2px;
+  cursor: pointer;
+}
+.hf-cos-item-detail .like:before {
+  content: "\f08a";
+  font-family: fontawesome;
+  font-size: 18px;
+  color: tomato;
+}
+.hf-cos-item-detail .like.active:before {
+  content: "\f004";
+  color: tomato;
+}
+.hf-cosmetic-best-bar {
+  border: 2px solid rgb(215, 230, 217);
+  width: 82.2%;
+  margin-left: 125px;
+  margin-top: 40px;
+}
+
+/***** Section : Skincare *****/
+.hf-cosmetic-skincare-inner {
+  /* border: 1px solid #000; */
+  width: 1150px;
+  height: 770px;
+  margin: auto;
+  margin-top: 60px;
+}
+.hf-cosmetic-skincare-inner h2 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(3, 119, 3);
+  font-size: 32px;
+  padding-top: 7px;
+}
+.hf-cosmetic-skincare-content {
+  /* border: 1px solid green;
+  width: 1140px;
+  height: 370px;
+  margin: auto; */
+}
+.hf-cosmetic-skincare-items {
+  /* border: 1px solid rgb(91, 209, 91); */
+  width: 1140px;
+  height: 690px;
+  margin: auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hf-cosmetic-skincare-item {
+  border: 1px solid rgb(241, 239, 239);
+  width: 210px;
+  height: 320px;
+  grid: 1;
+  position: relative;
+}
+.hf-cosmetic-skincare-item-text {
+  background-color: rgb(245, 245, 245);
+  height: 110px;
+}
+.hf-cosmetic-skincare-item-text .hf-skincare-detail {
+  background-color: rgb(245, 245, 245);
+}
+.hf-cosmetic-skincare-item-text .hf-skincare-detail div {}
+.hf-cosmetic-skincare-item-text .hf-skincare-detail h2,
+.hf-cosmetic-skincare-item-text .hf-skincare-detail h5 {
+  background-color: rgb(245, 245, 245);
+  margin: 7px 10px;
+}
+.hf-cosmetic-skincare-item-text .hf-skincare-detail h2 {
+  font-size: 18px;
+  line-height: 1.1em;
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 15px;
+}
+.hf-cosmetic-skincare-item-text .hf-skincare-detail span {
+  position: absolute;
+  top: 66%;
+  right: 5%;
+  font-size: 18px;
+  padding-top: 5px;
+  color:rgb(250, 69, 3);
+  font-weight: bold;
+  background-color: rgb(245, 245, 245);
+}
+.hf-cosmetic-skincare-item .hf-skincare-detail button {
+  border: 1px solid rgb(233, 235, 233);
+  width: 90%;
+  height: 25px;
+  text-align: center;
+  margin-left: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+.hf-cosmetic-skincare-item .hf-skincare-detail button:hover {
+  background-color: rgb(41, 128, 41);
+  color: #fff;
+}
+.hf-skincare-detail-like {
+  cursor: pointer;
+}
+.hf-skincare-detail-like:before {
+  content: '\f08a';
+  font-family: fontawesome;
+  font-size: 15px;
+  color: #222;
+  position: absolute;
+  top: 700%;
+  right: 25%;
+}
+.hf-skincare-detail-like.active:before {
+  content: '\f004';
+  color: rgb(250, 69, 3);
+}
+
+/***** Section : Makeup *****/
+.hf-cosmetic-makeup-inner {
+  /* border: 1px solid #000; */
+  width: 1150px;
+  height: 850px;
+  margin: auto;
+  margin-top: 60px;
+}
+.hf-cosmetic-makeup-inner h5 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(3, 119, 3);
+  font-size: 32px;
+  padding-top: 7px;
+}
+.hf-cosmetic-makeup-content {}
+.hf-cosmetic-makeup-items {
+  /* border: 1px solid rgb(91, 209, 91); */
+  width: 1140px;
+  height: 690px;
+  margin: auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hf-cosmetic-makeup-item {
+  border: 1px solid rgb(241, 239, 239);
+  width: 210px;
+  height: 320px;
+  grid: 1;
+  position: relative;
+}
+.hf-cosmetic-makeup-item-text {
+  background-color: rgb(245, 245, 245);
+  height: 110px;
+}
+.hf-cosmetic-makeup-item-text .hf-makeup-detail {
+  background-color: rgb(245, 245, 245);
+}
+.hf-cosmetic-makeup-item-text .hf-makeup-detail div {}
+.hf-cosmetic-makeup-item-text .hf-makeup-detail h2,
+.hf-cosmetic-makeup-item-text .hf-makeup-detail h5 {
+  background-color: rgb(245, 245, 245);
+  margin: 7px 10px;
+}
+.hf-cosmetic-makeup-item-text .hf-makeup-detail h2 {
+  font-size: 18px;
+  line-height: 1.1em;
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 15px;
+}
+.hf-cosmetic-makeup-item-text .hf-makeup-detail h5 {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+.hf-cosmetic-makeup-item-text .hf-makeup-detail span {
+  position: absolute;
+  top: 69%;
+  right: 5%;
+  font-size: 18px;
+  padding-top: 5px;
+  color:rgb(250, 69, 3);
+  font-weight: bold;
+  background-color: rgb(245, 245, 245);
+}
+.hf-cosmetic-makeup-item .hf-makeup-detail button {
+  border: 1px solid rgb(233, 235, 233);
+  width: 90%;
+  height: 25px;
+  text-align: center;
+  margin-left: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+.hf-cosmetic-makeup-item .hf-makeup-detail button:hover {
+  background-color: rgb(41, 128, 41);
+  color: #fff;
+}
+.hf-makeup-detail-like {
+  cursor: pointer;
+}
+.hf-makeup-detail-like:before {
+  content: '\f08a';
+  font-family: fontawesome;
+  font-size: 15px;
+  color: #222;
+  position: absolute;
+  top: 800%;
+  right: 25%;
+}
+.hf-makeup-detail-like.active:before {
+  content: '\f004';
+  color: rgb(250, 69, 3);
+}

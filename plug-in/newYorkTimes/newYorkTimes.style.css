@@ -1,0 +1,52 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Merriweather:wght@300;400;700;900&family=Monda:wght@400;700&family=Old+Standard+TT&family=Open+Sans:wght@300;400;500;600;700;800&family=Overpass&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+.nyt-search {
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-size: 15px;
+}
+.nyt-search button {
+  border: 1px solid rgb(139, 139, 139);
+  background-color: rgb(231, 228, 228);
+  font-size: 17px;
+  border-radius: 3px;
+}
+.nyt-headline {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+.nyt-headline svg {
+  width: 430px;
+}
+.nyt-menus {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 3px double black;
+}
+.nyt-menus button {
+  border: none;
+  background: none;
+  margin: 5px;
+}
+.nyt-menus button:hover {
+  background-color: rgb(236, 236, 236);
+}
+.nyt-image {
+  max-width: 100%;
+  max-height: 250px;
+}
+.nyt-news {
+  border-bottom: 2px solid rgb(150, 150, 150);
+}
+
+@media screen and (max-width: 768px){
+  .nyt-search {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}

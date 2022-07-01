@@ -1,0 +1,44 @@
+/* FontAwesome CDN 4.7 */
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.item {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .item h2 {
+  font-size: 31px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.container .item a {
+  font-size: 17px;
+}
+.container .item img {
+  margin-top: 35px;
+}

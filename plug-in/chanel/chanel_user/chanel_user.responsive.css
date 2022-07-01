@@ -1,0 +1,213 @@
+@media(max-width: 768px){
+  /*####### Section : chanel_header #######*/
+  .cn-header {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+    /* border: 1px solid #000; */
+  }
+  .chanel_logo {
+    position: absolute;
+    background: #fff;
+    margin-top: 15px;
+    margin-left: 160px;
+    width: 28%;
+    /* border: 1px solid green; */
+  }
+  .cn-icon {
+    display: none;
+  }
+  .cn-icon a {
+    display: none;
+  }
+  .cn-icon .search {}
+  .cn-icon .user {}
+  .cn-icon .bag {
+    margin-right: 150px;
+  }
+  .chanel-user-home {
+    font-size: 45px;
+    margin-right: 20px;
+    margin-top: -7px;
+  }
+
+  /* ## Section : Nav ## */
+  nav {
+    display: none;
+  }
+  nav a {
+    display: none;
+  }
+  nav a:hover {
+    display: none;
+  }
+  #horizontal-underline {
+    display: none;
+  }
+  .heading-bar {
+    display: none;
+  }
+
+  /* ###### Section : chanel-account ###### */
+  .chanel-account {
+    /* border: 1px solid green; */
+    width: 100%;
+    margin: 50px auto;
+    margin-top: 5px;
+    display: block;
+    position: relative;
+  }
+  .chanel-account h1 {
+    font-family: 'Monde', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .chanel-account-item {}
+  .chanel-account-btn {}
+  .chanel-account-btn a {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    font-family: 'Monde', sans-serif;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 35px;
+    margin-right: -3px;
+    border-bottom: 5px solid transparent;
+    letter-spacing: 2px;
+  }
+  .chanel-account-btn a.active {
+    background-color: #fff;
+    color: #000;
+    border-top: 5px solid #000;
+  }
+  .chanel-account-content {
+    position: relative;
+  }
+  .chanel-signin-item {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .chanel-signin-item h2 {
+    text-align: center;
+    font-family: 'Monde', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 35px;
+  }
+  .chanel-signin-item p {
+    text-align: center;
+    font-family: ariel, sans-serif;
+    margin-top: -5px;
+  }
+  #cn-signin-email,
+  #cn-signin-password,
+  #cn-register-email,
+  #cn-register-password,
+  #cn-register-first,
+  #cn-register-last {
+    width: 100%;
+    height: 50px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    margin-top: 32px;
+    font-size: 15px;
+  }
+  #cn-signin-password {
+    padding-top: 10px;
+  }
+  .cn-signin,
+  .cn-signin-b,
+  .cn-signin-em,
+  .cn-register-b,
+  .cn-register-em {
+    font-family: ariel, sans-serif;
+    font-size: 14px;
+  }
+  .cn-signin {
+    padding-top: 30px;
+    color: rgb(43, 42, 42);
+  }
+  .cn-signin-b,
+  .cn-signin-em,
+  .cn-register-b,
+  .cn-register-em {
+  padding-top: 40px;
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+  margin-bottom: 40px;
+  color: rgb(110, 110, 110);
+  }
+  .cn-signin-em {
+    text-decoration: underline;
+  }
+  .chanel-register-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    font-family: ariel, sans-serif;
+    font-family: normal;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .chanel-register-item p,
+  .cn-register {
+    font-family: ariel, sans-serif;
+    width: 400px;
+    font-weight: normal;
+    font-size: 15px;
+    color:rgb(124, 123, 123);
+  }
+  #cn-signin-email,
+  #cn-signin-password,
+  .cn-signin,
+  .cn-signin-b,
+  #cn-register-email,
+  #cn-register-password,
+  #cn-register-first,
+  #cn-register-last {
+    display: block;
+  }
+  #cn-register-password {
+    margin-bottom: 40px;
+  }
+  .cn-register-em  {
+    text-decoration: underline;
+  }
+  #cn-signin-button,
+  #cn-register-button {
+    display: block;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  #cn-register-button {
+    margin-top: 50px;
+  }
+  .chanel-signin-item:target,
+  .chanel-register-item:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  .chanel-signin-item {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}

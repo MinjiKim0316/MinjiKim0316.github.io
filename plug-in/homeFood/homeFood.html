@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Featherlight.js -->
+  <script src="/JS/featherlight/featherlight.js"></script>
+  <link rel="stylesheet" href="/JS/featherlight/featherlight.css">
+  <!-- Slick.js -->
+  <script type="text/javascript" src="/JS/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/JS/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/JS/slick/slick-theme.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/plug-in/homeFood/homeFood.style.css">
+  <link rel="stylesheet" href="/plug-in/homeFood/homeFood.responsive.css">
+  <title>homeFood</title>
+</head>
+<body>
+  
+  <div class="hf-container"> 
+    <header>
+      <div class="hf-heading">
+        <img src="/Image/Images/homeFood/hf-logo.jpg">
+        <input type="text" placeholder="SEARCH">
+        <button>SEARCH</button>
+        <div class="hf-cart"></div>
+        <div class="hf-user"></div>
+      </div>
+      <div class="hf-navigation-inner">
+        <div class="hf-navigation">
+          <ul>
+            <li>
+              <a href="#" class="hf_menu_navi">ABOUT</a>
+            </li>
+            <li>
+              <a href="#" class="hf_menu_navi">BEAUTY</a>
+                <div class="hf_sub_navi">
+                  <a href="/plug-in/homeFood/homeFood-beauty/homeFood-cosmetic.html" data-featherlight="iframe">COSMETIC</a>
+                  <a href="/plug-in/homeFood/homeFood-beauty/homeFood-hair.html" data-featherlight="iframe">HAIR</a>
+                </div>
+            </li>
+            <li>
+              <a href="#" class="hf_menu_navi">HEALTH</a>
+                <div class="hf_sub_navi">
+                  <a href="/plug-in/homeFood/homeFood-health/homeFood-health-food.html" data-featherlight="iframe">FOOD</a>
+                  <a href="/plug-in/homeFood/homeFood-health/homeFood-health-snack.html" data-featherlight="iframe">SNACK</a>
+                  <a href="/plug-in/homeFood/homeFood-health/homeFood-health-beverage.html" data-featherlight="iframe">BEVERAGE</a>
+                  <a href="/plug-in/homeFood/homeFood-health/homeFood-health-supplements.html" data-featherlight="iframe">SUPPLEMENTS</a>
+                </div>
+            </li>
+            <li>
+              <a href="#" class="hf_menu_navi">KIDS</a>
+                <div class="hf_sub_navi">
+                  <a href="/plug-in/homeFood/homeFood-kids/homeFood-kids-infant.html" data-featherlight="iframe">INFANT</a>
+                  <a href="/plug-in/homeFood/homeFood-kids/homeFood-kids-kid.html" data-featherlight="iframe">KID</a>
+                </div>
+            </li>
+            <li>
+              <a href="#" class="hf_menu_navi">PET</a>
+                <div class="hf_sub_navi">
+                  <a href="/plug-in/homeFood/homeFood-pet/homeFood-pet-food.html" data-featherlight="iframe">FOOD</a>
+                  <a href="/plug-in/homeFood/homeFood-pet/homeFood-pet-items.html" data-featherlight="iframe">ITEMS</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="hf-main">
+      <div id="hf-main-inner" class="hf-main-inner">
+        <div class="hf-main-slider">
+          <div class="hf-main-slides">
+            <input type="radio" name="hf-main-radio-btn" id="hf-main-radio1">
+            <input type="radio" name="hf-main-radio-btn" id="hf-main-radio2">
+            <input type="radio" name="hf-main-radio-btn" id="hf-main-radio3">
+            <input type="radio" name="hf-main-radio-btn" id="hf-main-radio4">
+            <div class="hf-main-slide-first">
+              <img src="/Image/Images/homeFood/hf-main1.jpg">
+            </div> 
+            <div class="hf-main-slide">
+              <img src="/Image/Images/homeFood/hf-main2.jpg">
+            </div> 
+            <div class="hf-main-slide">
+              <img src="/Image/Images/homeFood/hf-pet-food10.jpg">
+            </div>   
+            <div class="hf-main-slide">
+              <img src="/Image/Images/homeFood/hf-main4.jpg">
+            </div>     
+            <div class="hf-main-navi-auto">
+              <div class="hf-main-auto-btn1"></div>
+              <div class="hf-main-auto-btn2"></div>
+              <div class="hf-main-auto-btn3"></div>
+              <div class="hf-main-auto-btn4"></div>
+            </div>
+          </div>
+          <div class="hf-main-navi-manual">
+            <label for="hf-main-radio1" class="hf-main-manual-btn"></label>
+            <label for="hf-main-radio2" class="hf-main-manual-btn"></label>
+            <label for="hf-main-radio3" class="hf-main-manual-btn"></label>
+            <label for="hf-main-radio4" class="hf-main-manual-btn"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hf-coming-soon">
+      <div class="hf-coming-soon-inner">
+        <h4>Coming Soon</h4>
+        <div class="hf-new-items">
+          <div class="hf-new-item">
+            <img src="/Image/Images/homeFood/beauty-cosmetic1.jpg">
+            <div class="detail">
+              <div class="hf-new-detail-title">
+                <h2>Aqua Hydrogen Serum</h2>
+                <h5>Skincare</h5>
+                <span>$25</span>
+                <span class="hf-new-detail-like"></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="hf-new-item">
+            <img src="/Image/Images/homeFood/beauty-cosmetic2.jpg">
+            <div class="detail">
+              <div class="hf-new-detail-title">
+                <h2>Matcha Bamboo Cleanser</h2>
+                <h5>Cleanser</h5>
+                <span>$15</span>
+                <span class="hf-new-detail-like"></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="hf-new-item">
+            <img src="/Image/Images/homeFood/beauty-cosmetic3.jpg">
+            <div class="detail">
+              <div class="hf-new-detail-title">
+                <h2>Green Hydrogen Cream</h2>
+                <h5>Skincare</h5>
+                <span>$18</span>
+                <span class="hf-new-detail-like"></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="hf-new-item">
+            <img src="/Image/Images/homeFood/beauty-cosmetic4.jpg">
+            <div class="detail">
+              <div class="hf-new-detail-title">
+                <h2>All-In-One Barrier Serum</h2>
+                <h5>Skincare</h5>
+                <span>$18</span>
+                <span class="hf-new-detail-like"></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="hf-new-item">
+            <img src="/Image/Images/homeFood/beauty-cosmetic5.jpg">
+            <div class="detail">
+              <div class="hf-new-detail-title">
+                <h2>Watery Hydrogen Toner</h2>
+                <h5>Skincare</h5>
+                <span>$20</span>
+                <span class="hf-new-detail-like"></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hf-coming-soon-bar"></div>
+    <section class="hf-issue">
+      <div class="hf-issue-inner">
+        <h5>World Issues Now</h5>
+        <div class="hf-issue-items">
+          <div class="hf-issue-item">
+            <img src="/Image/Images/homeFood/hf-home-issue1.jpg">
+            <div class="hf-issue-text">
+              <h2>COVID 19 Pandemic</h2>
+              <span>New Covid 19 Viruses Are Coming. <br> <em>Are Additional Vaccines Mandatory?</em></span>
+            </div>
+          </div>
+          <div class="hf-issue-item">
+            <img src="/Image/Images/homeFood/hf-home-issue2.jpg">
+            <div class="hf-issue-text">
+              <h2>COVID 19 Pandemic</h2>
+              <span>New Antiviral Medications Against Covid 19 <em>Are Coming.</em></span>
+            </div>
+          </div>
+          <div class="hf-issue-item">
+            <img src="/Image/Images/homeFood/hf-home-issue5.jpg">
+            <div class="hf-issue-text">
+              <h2>COVID 19 Pandemic</h2>
+              <span>Workers Are Out Of Work. <br> <em>People Preper Staying At Home Than <b>Working Now.</b></em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hf-issue-inner-bar"></div>
+    <section class="hf-trend">
+      <div class="hf-trend-inner">
+        <h6>World Trend Now</h6>
+        <div class="hf-trend-items">
+          <div class="hf-trend-item">
+            <img src="/Image/Images/homeFood/hf-home-trend1.jpg">
+            <div class="hf-trend-text">
+              <h2>Retinol Cream</h2>
+              <span>New Youth Cream Is Coming. <br> <em>Stay And Keep Your Beauty!</em></span>
+            </div>
+          </div>
+          <div class="hf-trend-item">
+            <img src="/Image/Images/homeFood/hf-home-trend2.jpg">
+            <div class="hf-trend-text">
+              <h2>Healthy Food And Beverage</h2>
+              <span>Healthy Food, Beverage, and Supplements <em>For Your Immune Against Covid 19 Are Here.</em></span>
+            </div>
+          </div>
+          <div class="hf-trend-item">
+            <img src="/Image/Images/homeFood/hf-home-trend5.jpg">
+            <div class="hf-trend-text">
+              <h2>Hand Sanitizers And Face Masks</h2>
+              <span>Keep Safe And Stay Healthy!<br><em>Make Your life Keep Going!</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hf-trend-inner-bar"></div>
+    <section class="hf-service">
+      <div class="hf-service-inner">
+        <h1>Services</h1>
+        <div class="hf-service-icon-inner">
+          <div class="hf-service-icon-container">
+            <div class="hf-service-icon-box">
+              <img src="/Image/Images/homeFood/hf-service1.jpg">
+            </div>
+            <div class="hf-service-icon-test">
+              <h2>Delivery</h2>
+            </div>
+          </div>
+          <div class="hf-service-icon-container">
+            <div class="hf-service-icon-box">
+              <img src="/Image/Images/homeFood/hf-service2.jpg">
+            </div>
+            <div class="hf-service-icon-test">
+              <h2>Location</h2>
+            </div>
+          </div>
+          <div class="hf-service-icon-container">
+            <div class="hf-service-icon-box">
+              <img src="/Image/Images/homeFood/hf-service5.jpg">
+            </div>
+            <div class="hf-service-icon-test">
+              <h2>Service</h2>
+            </div>
+          </div>
+          <div class="hf-service-icon-container">
+            <div class="hf-service-icon-box">
+              <img src="/Image/Images/homeFood/hf-service6.jpg">
+            </div>
+            <div class="hf-service-icon-test">
+              <h2>Payment</h2>
+            </div>
+          </div>
+          <div class="hf-service-icon-container">
+            <div class="hf-service-icon-box">
+              <img src="/Image/Images/homeFood/hf-service7.jpg">
+            </div>
+            <div class="hf-service-icon-test">
+              <h2>Gifts</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="hf-footer-inner">
+        <div class="hf-footer-content">
+          <ul class="languages">
+            <li>Languages</li>
+            <li><a href="#none">English</a></li>
+            <li><a href="#none">Espanol</a></li>
+            <li><a href="#none">Deutsch</a></li>
+            <li><a href="#none">Korean</a></li>
+          </ul>
+          <ul class="community">
+            <li>Community</li>
+            <li><a href="#none">Subscribe</a></li>
+            <li><a href="#none">Give A Gift</a></li>
+            <li><a href="#none">Customer Service FAQ</a></li>
+            <li><a href="#none">Access Your Subscription</a></li>
+          </ul>
+          <ul class="HomeFood">
+            <li>HomeFood.com</li>
+            <li><a href="#none">About HomeFood.com</a></li>
+            <li><a href="#none">Contact</a></li>
+            <li><a href="#none">Cookies</a></li>
+            <li><a href="#none">Terms of Service</a></li>
+          </ul>
+          <ul class="visit">
+            <li>Visit Us On</li>
+            <div class="sns">
+              <a class="Instagram" href="#none"><i class="fa fa-instagram"></i></a>
+              <a class="YouTube" href="#none"><i class="fa fa-youtube"></i></a>
+              <a class="Snapchat" href="#none"><i class="fa fa-snapchat"></i></a>
+              <a class="Whatsapp" href="#none"><i class="fa fa-whatsapp"></i></a> 
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/plug-in/homeFood/homeFood.js" defer></script> 
+
+</body>
+</html>

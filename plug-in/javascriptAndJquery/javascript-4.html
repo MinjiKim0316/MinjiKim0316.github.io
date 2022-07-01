@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="/plug-in/javascriptAndJquery/javascript-4.style.css">
+  <title>javascript-4</title>
+</head>
+<body>
+  
+  <div class="container">
+    <ul class="navi">
+      <li data-image="/Image/Images/javascript/New-York-01.jpg"><a href="#none" data-text="ABOUT NEW YORK">ABOUT NEW YORK</a></li>
+      <li data-image="/Image/Images/javascript/New-York-02.jpg"><a href="#none" data-text="TIMES SQUARE">TIMES SQUARE</a></li>
+      <li data-image="/Image/Images/javascript/New-York-03.jpg"><a href="#none" data-text="THE STATUE OF LIBERTY">THE STATUE OF LIBERTY</a></li>
+      <li data-image="/Image/Images/javascript/New-York-04.jpg"><a href="#none" data-text="MANHATTAN VIEW">MANHATTAN VIEW</a></li>
+      <li data-image="/Image/Images/javascript/New-York-05.jpg"><a href="#none" data-text="CENTRAL PARK">CENTRAL PARK</a></li>
+    </ul>
+    <div class="photo"></div>
+  </div>
+
+  <script>
+    $('.navi li').mouseenter(function(){
+      let changeImage = $(this).attr('data-image')
+      $('.photo').css({
+        'background-image': 'url('+ changeImage +')'
+      })
+    })
+    $('.navi li').mouseleave(function(){
+      $('.photo').css({
+        'background-image': ''
+      })
+    })
+  </script>
+
+</body>
+</html>

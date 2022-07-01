@@ -1,0 +1,74 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+}
+.custom input[type=checkbox] {
+  display: none;
+}
+.custom label {
+  font-size: 17px;
+}
+.custom label em {
+  /* border: 1px solid red; */
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 9px;
+  margin-left: 65px;
+  background: url(/Image/Images/prototype/checkbox-02.png) no-repeat;
+  background-position: left center;
+}
+.custom input[type=checkbox]:checked + label em {
+  background-position: right center;
+}
+
+.bar {
+  border: 1px solid rgb(255, 253, 253);
+  width: 100%;
+  height: 3px;
+  background-color: rgb(233, 229, 229);
+  margin: 20px;
+  margin-left: 0;
+}
+
+.status input[type=radio] {
+  display: none;
+}
+.status label {
+  cursor: pointer;
+  font-size: 17px;
+}
+.status label em {
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url(/Image/Images/prototype/radio-01.png) no-repeat;
+  background-position: left center;
+}
+.status input[type=radio]:checked + label em {
+  background-position: right center;
+}
+.status input[type=radio]:checked + label {
+  color: crimson;
+}

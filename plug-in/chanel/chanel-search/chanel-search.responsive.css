@@ -1,0 +1,58 @@
+@media(max-width: 768px){
+  .chanel-search-inner {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  input {
+    border: transparent;
+    border-bottom: 4px solid rgb(27, 27, 27);
+    font-family: 'Monda', sans-serif;
+    width: 100%;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 4px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 0px;
+    color:rgb(156, 156, 156)
+  }
+  #cn-search {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -18px;
+    color: rgb(119, 118, 118);
+    font-size: 18px;
+  }
+  .chanel-home {
+    font-family: 'Monda', sans-serif;
+    color: #000;
+    font-weight: 500;
+    float: right;
+    margin-top: 40px;
+    margin-left: 90px;
+    font-size: 20px;
+  }
+  .chanel-search-content {}
+  .chanel-search-item {
+    position: absolute;
+    left: 20px;
+  }
+  .chanel-search-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding: 13px 0;
+  }
+  .chanel-search-item a {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    display: block;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+}

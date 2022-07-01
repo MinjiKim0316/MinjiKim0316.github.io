@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/06b8ff2a50.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/plug-in/chanel/chanel_user/chanel_user.style.css">
+    <link rel="stylesheet" href="/plug-in/chanel/chanel_user/chanel_user.responsive.css">
+  <title>chanel-user</title>
+</head>
+<body>
+
+  <div class="chanel-user-container">
+    <section class="chanel-header">
+      <div class="cn-header">
+        <img class="chanel_logo" src="/Image/Images/chanel/chanel-logo.png" onclick="window.location.href='/plug-in/chanel/chanel.html'">
+        <div class="cn-icon">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#"  class="user"><i class="fas fa-user-alt"></i></a>
+          <a href="#" class="bag"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+        <a href="#" class="chanel-user-home" onclick="window.location.href='/plug-in/chanel/chanel.html'">&times</a>
+        <nav>
+          <div id="horizontal-underline"></div>
+          <a href="#">FASHION</a>
+          <a href="#">FINE JEWELRY</a>
+          <a href="#">EYEWEAR</a>
+          <a href="#">FRAGRANCE</a>
+          <a href="#">MAKEUP</a>
+          <a href="#">ABOUT CHANEL</a>
+        </nav>
+        <div class="heading-bar"></div>
+        <div class="chanel-account">
+          <h1>ACCOUNT</h1>
+          <div class="chanel-account-item">
+            <div class="chanel-account-btn">
+              <a href="#signin">SIGN IN</a>
+              <a href="#register">REGISTER</a>
+            </div>
+            <div class="chanel-account-content">
+              <div id="signin" class="chanel-signin-item">
+                <h2>WELCOME BACK</h4>
+                <p>
+                  Sign in with your email and password.
+                </p>
+                <input type="email" id="cn-signin-email" placeholder="Email">
+                <input type="password" id="cn-signin-password" placeholder="Password">
+                <span class="cn-signin">Forgot password?</span>
+                <b class="cn-signin-b">By providing my information, I agree to CHANEL's <a href="#" class="cn-signin-em">Privacy Policy</a> and <a href="#" class="cn-signin-em">Legal Statement</a></b>
+                <button id="cn-signin-button">SIGN IN</button>
+              </div>
+              <div id="register" class="chanel-register-item">
+                <p>
+                  Create an account and benefit from a more personal shopping experience, and quicker online checkout.
+                </p>
+                <span class="cn-register">All fields are mandatory.</span>
+                <input type="email" id="cn-register-email" placeholder="Email">
+                <input type="text" id="cn-register-first" placeholder="First name">
+                <input type="text" id="cn-register-last" placeholder="Last name">
+                <input type="password" id="cn-register-password" placeholder="Password">
+                <b class="cn-register-b">By providing my information, I agree to CHANEL's <a href="#" class="cn-register-em">Privacy Policy</a> and <a href="#" class="cn-register-em">Legal Statement</a></b>
+                <button id="cn-register-button">CREATE ACCOUNT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script>
+    $('.chanel-account-btn a').click(function(){
+      $(this).addClass('active')
+      $(this).siblings('.chanel-account-btn a').removeClass('active')
+    })
+  </script>
+
+</body>
+</html>

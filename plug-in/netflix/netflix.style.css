@@ -1,0 +1,399 @@
+/* Xeicon CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6em;
+  font-size: 26px;
+}
+body.active {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+header {
+  overflow: hidden;
+  padding: 10px 55px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.nf-logo {
+  float: left;
+  margin-left: -20px;
+  margin-top: 0;
+}
+.nf-logo img {
+  width: 170px;
+}
+.nf-signin {
+  float: right;
+  margin-left: 1080px;
+  padding-top: 10px;
+}
+.nf-signin button {
+  background-color: rgb(230, 37, 11);
+  border: none;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* Common CSS */
+section {
+  border-bottom: 10px solid #333;
+  position: relative;
+}
+
+/* ############ Section : nf-Welcome ############# */
+.nf-welcome {
+  height: 94vh;
+  background: url(/Image/Images/netFlix/netflix-image-01.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.nf-welcome:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Heading */
+.nf-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  width: 800px;
+}
+.nf-heading h1 {
+  font-size: 50px;
+  line-height: 1.2em;
+  margin: 0;
+  width: 600px;
+  margin-left: 100px;
+}
+.nf-heading h5 {
+  font-weight: 300;
+  margin: 0;
+  font-size: 27px;
+  letter-spacing: -1px;
+  padding-top: 14px;
+  margin-left: 100px;
+  width: 600px;
+
+}
+.nf-heading p {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.getstarted {}
+.getstarted input[type=email], .getstarted button{
+  height: 60px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+.nf-aside,
+.getstarted input[type=email] {
+  width: 450px;
+  margin-right: -6px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.nf-started,
+.getstarted button {
+  width: 220px;
+  background-color: rgb(230, 37, 11);
+  color: #fff;
+  font-size: 27px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+/* ############## Section : nf-Enjoy, Download, Watch, Create ############## */
+.nf-enjoy, .nf-download, .nf-watch, .nf-create {
+  height: 500px;
+}
+.nf-enjoy-inner,
+.nf-download-inner,
+.nf-watch-inner,
+.nf-create-inner {
+  width: 1150px;
+  margin: auto;
+  /* border: 1px solid #fff; */
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nf-enjoy-inner > div,
+.nf-download-inner > div,
+.nf-watch-inner > div,
+.nf-create-inner > div {
+  float: left;
+  width: 50%;
+}
+.nf-desc {
+  padding-top: 50px;
+}
+.nf-desc h2 {
+  font-size: 49px;
+  line-height: 1.2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.nf-desc p {
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-top: -25px;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.nf-preview {
+  text-align: center;
+}
+.nf-preview img {
+  height: 350px;
+}
+
+/* ########## Section : FAQ ########## */
+.nf-faq {
+  padding: 80px 0;
+}
+.nf-faq-inner {
+  width: 820px;
+  margin: auto;
+}
+.nf-faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 55px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.nf-faq-accordion-item {
+  display: block;
+  border: 1px solid #303030;
+  background-color: #303030;
+  color: #fff;
+  width: 850px;
+  height: 80px;
+  font-size: 25px;
+  padding: 17px 32px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-align: left;
+  overflow: hidden;
+}
+.panel {
+  background-color: #303030;
+  width: 850px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 1px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.3em;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+button span {
+  float: right;
+  font-size: 34px;
+  transition: 0.25s;
+}
+aside {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+/* ######### Footer ######## */
+footer {
+  padding: 50px 0;
+  font-size: 12.5px;
+  color: #777;
+  line-height: 1.5em;
+}
+.nf-footer-inner {
+  /* border: 1px solid #fff; */
+  width: 935px;
+  margin: auto;
+  margin-left: 18%;
+}
+.nf-sitemap {}
+.nf-sitemap h6 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 25px 0;
+}
+.nf-links {}
+.nf-items {
+  /* border: 1px solid #fff; */
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+}
+.nf-items a {
+  color: #777;
+  display: block;
+  padding-bottom: 10px;
+  transition: 0.2s;
+}
+.nf-items a:hover {
+  text-decoration: underline;
+}
+.nf-copyright {
+  margin-top: 40px;
+}
+.nf-copyright p {
+  color: #777;
+}
+
+/* ######### Login Modal ######### */
+.nf-modal-login {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 70px;
+  display: none;
+}
+.nf-login {
+  /* border: 1px solid #fff; */
+  width: 450px;
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 15px;
+  color: #777;
+  font-weight: 300;
+  padding: 40px 70px;
+}
+.nf-login h1 {
+  font-size: 31px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.nf-login input[type=text],
+.nf-login input[type=password] {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 14px;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+}
+.nf-login input[type=button] {
+  font-size: 17px;
+  background-color: rgb(230, 37, 11);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.nf-login p a {
+  color: royalblue;
+}
+.nf-save-info {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.nf-save-info label {
+  font-size: 14px;
+  float: left;
+  color: #999;
+}
+.nf-save-info a {
+  font-size: 14px;
+  float: right;
+  color: #999;
+  transition: 0.2s;
+}
+.nf-save-info a:hover {
+  text-decoration: underline;
+}
+.nf-sign-info {
+  margin-top: 50px;
+}
+.nf-sign-info span {
+  font-size: 15px;
+  font-weight: bold;
+}
+.nf-sign-info span a {
+  font-size: 16px;
+  padding-left: 5px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+.nf-sign-info span a:hover {
+  text-decoration: underline;
+}
+.nf-signin-info {}
+.nf-signin-info p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.1em;
+  margin-top: 0;
+}
+.nf-signin-info p a {
+  font-size: 14px;
+  color:rgb(6, 109, 245);
+  transition: 0.2s;
+}
+.nf-signin-info p a:hover {
+  text-decoration: underline;
+}
+
+.nf-btn-close {
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

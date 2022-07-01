@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="/plug-in/javascriptAndJquery/javascript-1.style.css">
+  <title>javascript-1</title>
+</head>
+<body>
+  
+  <div class="testimonial-section">
+    <h1><span>The Ocean </span>The Best Team For Your House Interior</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="/Image/Images/javascript/figure-image-01.jpg" data-alt="tab1">
+      <img src="/Image/Images/javascript/figure-image-02jpg" data-alt="tab2">
+      <img src="/Image/Images/javascript/figure-image-03.jpg" data-alt="tab3">
+      <img src="/Image/Images/javascript/figure-image-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non id aspernatur ducimus deserunt nostrum omnis voluptatibus eaque quisquam pariatur ea magni fugiat sapiente, molestiae rem saepe culpa enim atque optio corrupti dolor fugit eos. Quidem, velit, earum maxime debitis maiores at ut aliquam nihil consequuntur, atque unde voluptatibus. Iusto dolores voluptatibus, provident exercitationem ex beatae animi. Voluptates voluptatem quibusdam, provident eligendi ea, a vero sapiente perspiciatis harum, eveniet reiciendis?</p>
+        <p>Alexandria, Director</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non id aspernatur ducimus deserunt nostrum omnis voluptatibus eaque quisquam pariatur ea magni fugiat sapiente, molestiae rem saepe culpa enim atque optio corrupti dolor fugit eos. Quidem, velit, earum maxime debitis maiores at ut aliquam nihil consequuntur, atque unde voluptatibus. Iusto dolores voluptatibus, provident exercitationem ex beatae animi. Voluptates voluptatem quibusdam, provident eligendi ea, a vero sapiente perspiciatis harum, eveniet reiciendis?</p>
+        <p>Jane, Associate Designer</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non id aspernatur ducimus deserunt nostrum omnis voluptatibus eaque quisquam pariatur ea magni fugiat sapiente, molestiae rem saepe culpa enim atque optio corrupti dolor fugit eos. Quidem, velit, earum maxime debitis maiores at ut aliquam nihil consequuntur, atque unde voluptatibus. Iusto dolores voluptatibus, provident exercitationem ex beatae animi. Voluptates voluptatem quibusdam, provident eligendi ea, a vero sapiente perspiciatis harum, eveniet reiciendis?</p>
+        <p>Austin, Interior Designer</p>
+      </div>
+      <div class="content" id="tab4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non id aspernatur ducimus deserunt nostrum omnis voluptatibus eaque quisquam pariatur ea magni fugiat sapiente, molestiae rem saepe culpa enim atque optio corrupti dolor fugit eos. Quidem, velit, earum maxime debitis maiores at ut aliquam nihil consequuntur, atque unde voluptatibus. Iusto dolores voluptatibus, provident exercitationem ex beatae animi. Voluptates voluptatem quibusdam, provident eligendi ea, a vero sapiente perspiciatis harum, eveniet reiciendis?</p>
+        <p>Jonathan, Manager</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.testimonial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      $('.testimonial .content').removeClass('active')
+      $('#' + $(this).attr('data-alt')).addClass('active')
+    })
+  </script>
+
+</body>
+</html>

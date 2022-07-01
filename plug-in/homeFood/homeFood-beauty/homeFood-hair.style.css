@@ -1,0 +1,365 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Overpass&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+/* FontAwesome CDN 4.7 */
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Common CSS  */
+* {
+  font-family: 'Raleway', sans-serif;
+  list-style: none;
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+body {
+  line-height: 1.2em;
+}
+/* ####### Section : Hair ####### */
+
+.hf-hair-container {
+  width: 1420px;
+  position: relative;
+}
+.hf-hair-heading {
+  height: 29px;
+}
+.hf-hair-heading h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  font-size: 34.5px;
+  color: orangered;
+}
+.hf-hair-bar {
+  position: absolute;
+  border: 2px solid rgb(215, 230, 217);
+  width: 290px;
+  top: 12%;
+  left: 41%;
+}
+.hf-hair-best-inner {
+  /* border: 1px solid #000; */
+  width: 1150px;
+  height: 400px;
+  margin: auto;
+  margin-top: 110px;
+}
+.hf-hair-best-inner h2 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(3, 119, 3);
+  font-size: 32px;
+  padding: 20px;
+  padding-left: 0;
+}
+.hf-hair-items {
+  display: flex;
+  gap: 25px;
+  counter-reset: item;
+}
+.hf-hair-item {
+  /* border: 1px solid #000; */
+  height: 290px;
+  padding-top: 20px;
+  flex: 1;
+  position: relative;
+  counter-increment: item;
+}
+.hf-hair-item:hover:before {
+  background-color: rgb(140, 185, 140);
+}
+.hf-hair-item:before {
+ content: counter(item);
+ position: absolute;
+ width: 35px;
+ height: 35px;
+ background-color: #ccc;
+ z-index: 10;
+ border-radius: 0 0 5px 0;
+ color: #fff;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ line-height: 35px;
+}
+.hf-hair-item-photo {
+  position: relative;
+  height: 225px;
+}
+.hf-hair-item-photo a {}
+.hf-hair-item-photo a img {
+  width: 100%;
+  position: absolute;
+  /* z-index: 0; */
+  transition: 0.5s;
+}
+.hf-hair-item-photo a img:first-child {
+  z-index: 1;
+}
+.hf-hair-item-photo a img:last-child {}
+.hf-hair-item-photo:hover a img:first-child {
+  opacity: 0;
+}
+.hf-hair-item-photo:hover a img:last-child {}
+.hf-hair-item-detail {
+  position: relative;
+}
+.hf-hair-item-detail span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.hf-hair-item-detail .price {
+  color:rgb(3, 119, 3);
+  font-size: 19px;
+}
+.hf-hair-item-detail .price b {
+  color: tomato;
+  font-size: 20px;
+}
+.hf-hair-item-detail .price b small {
+  color: tomato;
+  margin-right: 10px;
+}
+.hf-hair-item-detail .name {
+  padding-top: 4px;
+  font-size: 17px;
+}
+.hf-hair-item-detail .count {
+  font-size: 16px;
+  color: rgb(51, 50, 50);
+  margin-left: -20px;
+}
+.hf-hair-item-detail .like {
+  position: absolute;
+  /* border: 1px solid tomato; */
+  width: 20px;
+  height: 20px;
+  right: 45px;
+  bottom: -2px;
+  cursor: pointer;
+}
+.hf-hair-item-detail .like:before {
+  content: "\f08a";
+  font-family: fontawesome;
+  font-size: 18px;
+  color: tomato;
+}
+.hf-hair-item-detail .like.active:before {
+  content: "\f004";
+  color: tomato;
+}
+.hf-hair-best-bar {
+  border: 2px solid rgb(215, 230, 217);
+  width: 82.2%;
+  margin-left: 125px;
+  margin-top: 40px;
+}
+
+/***** Section : Cleanser *****/
+.hf-hair-cleanser-inner {
+  /* border: 1px solid #000; */
+  width: 1150px;
+  height: 770px;
+  margin: auto;
+  margin-top: 60px;
+}
+.hf-hair-cleanser-inner h2 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(3, 119, 3);
+  font-size: 32px;
+  padding-top: 7px;
+}
+.hf-hair-cleanser-content {
+  /* border: 1px solid red;
+  width: 1140px;
+  height: 370px;
+  margin: auto; */
+}
+.hf-hair-cleanser-items {
+  /* border: 1px solid rgb(91, 209, 91); */
+  width: 1140px;
+  height: 690px;
+  margin: auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hf-hair-cleanser-item {
+  border: 1px solid rgb(241, 239, 239);
+  width: 210px;
+  height: 320px;
+  grid: 1;
+  position: relative;
+}
+.hf-hair-cleanser-item-text {
+  background-color: rgb(245, 245, 245);
+  height: 110px;
+}
+.hf-hair-cleanser-item-text .hf-cleanser-detail {
+  background-color: rgb(245, 245, 245);
+}
+.hf-hair-cleanser-item-text .hf-cleanser-detail div {}
+.hf-hair-cleanser-item-text .hf-cleanser-detail h2,
+.hf-hair-cleanser-item-text .hf-cleanser-detail h5 {
+  background-color: rgb(245, 245, 245);
+  margin: 7px 10px;
+}
+.hf-hair-cleanser-item-text .hf-cleanser-detail h2 {
+  font-size: 15px;
+  line-height: 1.1em;
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 15px;
+}
+.hf-hair-cleanser-item-text .hf-cleanser-detail span {
+  position: absolute;
+  top: 68.5%;
+  right: 5%;
+  font-size: 18px;
+  padding-top: 5px;
+  color:rgb(250, 69, 3);
+  font-weight: bold;
+  background-color: rgb(245, 245, 245);
+}
+.hf-hair-cleanser-item .hf-cleanser-detail button {
+  border: 1px solid rgb(233, 235, 233);
+  width: 90%;
+  height: 25px;
+  text-align: center;
+  margin-left: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+.hf-hair-cleanser-item .hf-cleanser-detail button:hover {
+  background-color: rgb(41, 128, 41);
+  color: #fff;
+}
+.hf-cleanser-detail-like {
+  cursor: pointer;
+}
+.hf-cleanser-detail-like:before {
+  content: '\f08a';
+  font-family: fontawesome;
+  font-size: 15px;
+  color: #222;
+  position: absolute;
+  top: 650%;
+  right: 25%;
+}
+.hf-cleanser-detail-like.active:before {
+  content: '\f004';
+  color: rgb(250, 69, 3);
+}
+
+/***** Section : Treatment *****/
+.hf-hair-treatment-inner {
+  /* border: 1px solid #000; */
+  width: 1150px;
+  height: 850px;
+  margin: auto;
+  margin-top: 60px;
+}
+.hf-hair-treatment-inner h5 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(3, 119, 3);
+  font-size: 32px;
+  padding-top: 7px;
+}
+.hf-hair-treatment-content {}
+.hf-hair-treatment-items {
+  width: 1140px;
+  height: 690px;
+  margin: auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hf-hair-treatment-item {
+  border: 1px solid rgb(241, 239, 239);
+  width: 210px;
+  height: 320px;
+  grid: 1;
+  position: relative;
+}
+.hf-hair-treatment-item-text {
+  background-color: rgb(245, 245, 245);
+  height: 110px;
+}
+.hf-hair-treatment-item-text .hf-treatment-detail {
+  background-color: rgb(245, 245, 245);
+}
+.hf-hair-treatment-item-text .hf-treatment-detail div {}
+.hf-hair-treatment-item-text .hf-treatment-detail h2,
+.hf-hair-treatment-item-text .hf-treatment-detail h5 {
+  background-color: rgb(245, 245, 245);
+  margin: 7px 10px;
+}
+.hf-hair-treatment-item-text .hf-treatment-detail h2 {
+  font-size: 15px;
+  line-height: 1.1em;
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 15px;
+}
+.hf-hair-treatment-item-text .hf-treatment-detail h5 {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+.hf-hair-treatment-item-text .hf-treatment-detail span {
+  position: absolute;
+  top: 68.5%;
+  right: 5%;
+  font-size: 18px;
+  padding-top: 5px;
+  color:rgb(250, 69, 3);
+  font-weight: bold;
+  background-color: rgb(245, 245, 245);
+}
+.hf-hair-treatment-item .hf-treatment-detail button {
+  border: 1px solid rgb(233, 235, 233);
+  width: 90%;
+  height: 25px;
+  text-align: center;
+  margin-left: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+.hf-hair-treatment-item .hf-treatment-detail button:hover {
+  background-color: rgb(41, 128, 41);
+  color: #fff;
+}
+.hf-treatment-detail-like {
+  cursor: pointer;
+}
+.hf-treatment-detail-like:before {
+  content: '\f08a';
+  font-family: fontawesome;
+  font-size: 15px;
+  color: #222;
+  position: absolute;
+  top: 800%;
+  right: 25%;
+}
+.hf-treatment-detail-like.active:before {
+  content: '\f004';
+  color: rgb(250, 69, 3);
+}

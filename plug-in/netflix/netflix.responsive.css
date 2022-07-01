@@ -1,0 +1,277 @@
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 16px;
+  }
+   /* ############## Section : header ############## */
+  header {
+    padding: 25px 10px;
+  }
+  .nf-logo {
+    float: left;
+    margin-left: 0;
+    margin-top: -5px;
+  }
+  .nf-logo img {
+    width: 110px;
+  }
+  .nf-signin {
+    float: right;
+    margin-left: 170px;
+    padding-top: 10px;
+  }
+  .nf-signin button {
+    background-color: rgb(230, 37, 11);
+    border: none;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+  }
+   /* ############## Section : welcome ############## */
+  .nf-welcome {
+    height: 95vh;
+  }
+   /* ############## Section : heading ############## */
+  .nf-heading {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nf-heading h1 {
+    font-size: 28px;
+    width: 298px;
+    font-weight: 400;
+    /* margin-left: 0; */
+    transform: translateX(-20%);
+  }
+  .nf-heading h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translateX(-32%);
+  }
+  .nf-heading p {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 70%;
+    transform: translateX(6%);
+  }
+  .getstarted {}
+  .getstarted input[type=email], .getstarted button{
+  height: 50px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  border-radius: 2px;
+  }
+  .nf-aside,
+  .getstarted input[type=email] {
+    width: 70%;
+    margin: auto;
+    font-size: 15px;
+    transform: translateX(-16%);
+  }
+  .nf-started,
+  .getstarted button {
+    width: 39%;
+    background-color: rgb(230, 37, 11);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 15px;
+    transform: translateX(-27%);
+  }
+  /* ############## Section : nf-Enjoy, Download, Watch, Create ############## */
+  .nf-enjoy, .nf-download, .nf-watch, .nf-create {
+    height: auto;
+  }
+  .nf-enjoy-inner,
+  .nf-download-inner,
+  .nf-watch-inner,
+  .nf-create-inner,
+  .nf-faq-inner {
+    width: 100%;
+    position: static;
+    transform: translate(0);
+  }
+  .nf-enjoy-inner > div,
+  .nf-download-inner > div,
+  .nf-watch-inner > div,
+  .nf-create-inner > div {
+  float: none;
+  width: 100%;
+  }
+  /* Change Order */
+  .nf-download .nf-download-inner,
+  .nf-create .nf-create-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .nf-download .nf-download-inner .nf-desc {
+    order: 1;
+  }
+  .nf-download .nf-download-inner .nf-preview {
+    order: 2;
+  }
+  .nf-create .nf-create-inner .nf-desc {
+    order: 1;
+  }
+  .nf-create .nf-create-inner .nf-preview {
+    order: 2;
+  }
+
+  .nf-desc,
+  .nf-preview {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .nf-preview img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+  }
+  .nf-desc {
+    padding-top: 100px;
+  }
+  .nf-desc h2 {
+    font-size: 23px;
+    line-height: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 78%;
+  }
+  .nf-desc p {
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    width: 75%;
+  }
+  .nf-preview img {
+    height: auto;
+    margin-top: 20px;
+    width: 90%;
+    transform: translateX(-12%);
+  }
+  /* ########## Section : FAQ ########## */
+  .nf-faq {
+    padding: 80px 0;
+  }
+  .nf-faq-inner {
+    width: 80%;
+    margin-left: 0;
+  }
+  .nf-faq-inner h1 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 29px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 0px;
+    width: 90%;
+    margin-left: 0px;
+  }
+  .nf-faq-accordion-item {
+    width: 100%;
+    font-size: 17px;
+    margin-left: -10px;
+  }
+  .panel {
+    width: 100%;
+    background-color: #303030;
+    padding: 0;
+    margin-bottom: 1px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+    /* display: none; */
+    max-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  button span {
+    float: right;
+    font-size: 19px;
+    transition: 0.25s;
+    margin-right: 0px;
+  }
+  aside {
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  aside p {
+    margin-left: 5px;
+    line-height: 1.2em;
+    width: 80%;
+  }
+  .getstarted input {
+    transform: translateX(-50%);
+  }
+  aside button {
+    margin-left: -10px;
+  }
+
+  /* ######### Footer ######## */
+  .nf-footer-inner {
+  width: 100%;
+  margin-left: 12px;
+  }
+  .nf-items {
+    /* border: 1px solid #fff; */
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+  }
+  .nf-items a {
+    font-size: 13px;
+  }
+  .nf-copyright p {
+    width: 73%;
+    line-height: 1.1em;
+    font-size: 13px;
+  }
+  /* ######### Login Modal ######### */
+  .nf-modal-login {
+    margin-top: -65px; 
+  }
+  .nf-login {
+    width: 100%;
+    margin-left: -55px;
+  }
+  .nf-login h1 {
+    margin-bottom: 35px;
+  }
+  .nf-sign-info {
+    margin-bottom: 10px;
+  }
+  .nf-signin-info p {
+    line-height: 1.2em;
+  }
+  .nf-btn-close {
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    color: #fff;
+  }
+}
