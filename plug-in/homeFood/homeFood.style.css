@@ -1,8 +1,6 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Overpass&display=swap');
-/* FontAwesome CDN 4.7 */
-@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* Common CSS  */
 * {
@@ -59,12 +57,6 @@ input {
   float: right; 
   margin-right: 150px;
   margin-top: 31px;
-}
-.hf-heading .hf-cart:after {
-  content: '\f07a';
-  font-family: fontawesome;
-  color: orangered;
-  position: absolute;
   cursor: pointer;
   width: 27px;
   height: 27px;
@@ -74,16 +66,10 @@ input {
   float: right;
   margin-right: 220px;
   margin-top: -29px;
-}
-.hf-heading .hf-user:after {
-  content: '\f007';
-  font-family: fontawesome;
-  color: orangered;
-  position: absolute;
   cursor: pointer;
-  width: 27px;
-  height: 27px;
-  font-size: 27px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
 }
 /***** Navigation *****/
 .hf-navigation-inner {
@@ -310,6 +296,7 @@ input {
 }
 .hf-new-detail-like {
   cursor: pointer;
+  font-size: 15px;
 }
 .hf-new-detail-like:before {
   content: '\f08a';
