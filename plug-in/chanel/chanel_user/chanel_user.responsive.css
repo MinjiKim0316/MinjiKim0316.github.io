@@ -12,7 +12,7 @@
     position: absolute;
     background: #fff;
     margin-top: 15px;
-    margin-left: 160px;
+    margin-left: 167px;
     width: 28%;
     /* border: 1px solid green; */
   }
@@ -70,17 +70,8 @@
   .chanel-account-item {}
   .chanel-account-btn {}
   .chanel-account-btn a {
-    background-color: #fff;
-    color: #000;
-    display: inline-block;
-    font-family: 'Monde', sans-serif;
-    width: 150px;
-    text-align: center;
-    padding: 10px;
-    margin-left: 35px;
-    margin-right: -3px;
-    border-bottom: 5px solid transparent;
-    letter-spacing: 2px;
+    padding: 5px;
+    margin: 0;
   }
   .chanel-account-btn a.active {
     background-color: #fff;

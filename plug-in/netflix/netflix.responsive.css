@@ -19,7 +19,7 @@
   }
   .nf-signin {
     float: right;
-    margin-left: 170px;
+    margin-left: 250px;
     padding-top: 10px;
   }
   .nf-signin button {
@@ -42,7 +42,7 @@
     width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
   }
   .nf-heading h1 {
@@ -102,7 +102,7 @@
   .nf-faq-inner {
     width: 100%;
     position: static;
-    transform: translate(0);
+    transform: translateX(10%);
   }
   .nf-enjoy-inner > div,
   .nf-download-inner > div,
@@ -170,8 +170,8 @@
     padding: 80px 0;
   }
   .nf-faq-inner {
-    width: 80%;
-    margin-left: 0;
+    width: 100%;
+    transform: translate(0%);
   }
   .nf-faq-inner h1 {
     text-align: center;
@@ -181,7 +181,7 @@
     font-weight: 500;
     margin-top: 0px;
     width: 90%;
-    margin-left: 0px;
+    transform: translateX(5%);
   }
   .nf-faq-accordion-item {
     width: 100%;
@@ -189,7 +189,7 @@
     margin-left: -10px;
   }
   .panel {
-    width: 100%;
+    width: 98%;
     background-color: #303030;
     padding: 0;
     margin-bottom: 1px;
@@ -216,7 +216,7 @@
     letter-spacing: 1px;
     margin-top: 18px;
     width: 100%;
-    margin-left: 10px;
+    transform: translateX(10%);
   }
   aside p {
     margin-left: 5px;
@@ -227,13 +227,13 @@
     transform: translateX(-50%);
   }
   aside button {
-    margin-left: -10px;
+    transform: translateX(-10%);
   }
 
   /* ######### Footer ######## */
   .nf-footer-inner {
   width: 100%;
-  margin-left: 12px;
+  transform: translateX(-12%);
   }
   .nf-items {
     /* border: 1px solid #fff; */
@@ -251,14 +251,16 @@
   }
   /* ######### Login Modal ######### */
   .nf-modal-login {
-    margin-top: -65px; 
+    transform: translate(2%);
   }
   .nf-login {
     width: 100%;
-    margin-left: -55px;
+    transform: translate(-5% -5%);
+    margin-left: -5px;
   }
   .nf-login h1 {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
   }
   .nf-sign-info {
     margin-bottom: 10px;
