@@ -337,7 +337,7 @@ input {
   width: 350px;
   height: 100px;
   margin-top: -12px; 
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
 }
 .hf-issue-text h2,
 .hf-issue-text span,

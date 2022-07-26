@@ -39,37 +39,27 @@
   }
   .hf-heading .hf-cart {
     float: right; 
-    margin-right: 1020px;
+    margin-right: 1000px;
     margin-top: 9px;
-  }
-  .hf-heading .hf-cart:after {
-    content: '\f07a';
-    font-family: fontawesome;
-    color: orangered;
-    position: absolute;
-    cursor: pointer;
-    width: 27px;
-    height: 27px;
-    font-size: 27px;
   }
   .hf-heading .hf-user {
     float: right;
-    margin-right: 1055px;
+    margin-right: 1040px;
     margin-top: -25px;
-  }
-  .hf-heading .hf-user:after {
-    content: '\f007';
-    font-family: fontawesome;
-    color: orangered;
-    position: absolute;
-    cursor: pointer;
-    width: 27px;
-    height: 27px;
-    font-size: 27px;
   }
 
   /*####### Section : Navigation #######*/
-
+  .hf-navigation-inner {
+    width: 100%;
+    margin: auto;
+  }
+  .hf-navigation {
+    margin-top: 29px;
+    list-style: none;
+    padding: 0;
+    margin-left: 0px;
+    height: auto;
+  }
   /*####### Section : Main #######*/
   .hf-main-inner,
   .hf-main-slider,
@@ -178,8 +168,8 @@
   /***** Section : Main *****/
   .hf-new-items {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
+    grid-template-columns: auto;
+    gap: 10px; 
   }
   .hf-new-item {
     border-radius: 5px;
@@ -187,7 +177,7 @@
     position: static;
     margin: 0;
     padding-top: 40px;
-    float: left;
+    float: none;
     box-sizing: border-box;
     grid: 1;
     margin-left: 20px;
@@ -200,10 +190,10 @@
     border: 1px solid #eee;
     background-color: rgb(245, 245, 245);
     position: absolute;
-    width: 37%;
-    bottom: -245px;
+    width: 72.2%;
+    bottom: -280px;
     left: 25px;
-    height: 110px;
+    height: 150px;
     display: grid;
     /* transition: 0.5s; */
     box-sizing: border-box;
@@ -220,24 +210,27 @@
     margin: 7px 5px;
   }
   .hf-new-item .detail .hf-new-detail-title h2 {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.1em;
+    margin-top: 15px;
   }
   .hf-new-item .detail .hf-new-detail-title span {
     position: absolute;
     top: 0;
     right: 2%;
-    font-size: 18px;
+    font-size: 23px;
     padding-top: 5px;
+    margin-top: 7px;
     color:rgb(250, 69, 3);
     background-color: rgb(245, 245, 245);
   }
   .hf-new-item .detail .hf-new-detail-title button {
     border: 1px solid rgb(233, 235, 233);
-    width: 90%;
-    height: 25px;
+    width: 100%;
+    height: 35px;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-top: 40px;
     background-color: #fff;
     font-weight: bold;
     border-radius: 2.5px;
@@ -253,7 +246,7 @@
   .hf-new-detail-like:before {
     content: '\f08a';
     font-family: fontawesome;
-    font-size: 15px;
+    font-size: 20px;
     color: #222;
     position: absolute;
     top: 900%;
@@ -262,5 +255,71 @@
   .hf-new-detail-like.active:before {
     content: '\f004';
     color: rgb(250, 69, 3);
+  }
+  .hf-issue-inner,
+  .hf-trend-inner,
+  .hf-service-inner {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: auto;
+  }
+  .hf-issue-inner .hf-issue-items .hf-issue-item {
+    /* border: 1px solid rgb(139, 38, 38); */
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .hf-trend-inner .hf-trend-items .hf-trend-item {
+    height: auto;
+    float: none;
+  }
+  .hf-service-icon-inner {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: auto;
+    transform: translateX(7%);
+  }
+  .hf-service-icon-container {
+    /* border: 1px solid green; */
+    position: relative;
+    width: 200px;
+    height: 260px;
+    background-color: rgb(174, 248, 205);
+    border-radius: 5px;
+    margin-top: 10px;
+    float: none;
+    box-sizing: border-box;
+    margin-right: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  footer {
+    width: 37%;
+    height: auto;
+  }
+  .hf-footer-content {
+    flex-direction: column;
+    padding: 0;
+    /* padding-left: 20px; */
+    margin-left: -50px;
+  }
+  .hf-footer-content ul {
+    text-align: center;
+    list-style: none;
+    transform: translateX(-5%);
+  }
+  .hf-footer-content ul li:first-child {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .hf-coming-soon-bar,
+  .hf-issue-inner-bar,
+  .hf-trend-inner-bar {
+    border: 2px solid #eee;
+    width: 37%;
+    margin-left: 0px;
+    margin-top: 50px;
   }
 }
