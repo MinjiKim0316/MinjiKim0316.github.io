@@ -9,7 +9,7 @@ let url;
 
 const getNews = async () => {
   try{
-    let header = new Headers({'x-api-key':'qEPyKxanMzAUZDwo61SqghnfZfWgsq1hgVMHqax9bJY'});
+    let header = new Headers({'x-api-key':'U1S8JGqBkyEoSFfTr9KIJs2_dZW_QwGvI1Y9KMn6bHk'});
     let response = await fetch(url, { headers: header });
     let data = await response.json();
     if (response.status == 200) {
